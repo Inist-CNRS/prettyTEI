@@ -1,0 +1,826 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns:tei="http://www.tei-c.org/ns/1.0">
+    <teiHeader type="text">
+        <fileDesc>
+            <titleStmt>
+                <title level="a" type="alt" xml:lang="">The adsorption of single molecules of DNA on carbon microelectrodes</title>
+            </titleStmt>
+            <publicationStmt>
+                <authority>ISTEX</authority>
+                <publisher>ELSEVIER</publisher>
+                <date>1991</date>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct type="inbook">
+                    <analytic>
+                        <title level="a" type="main" xml:lang="">The adsorption of single molecules of DNA on carbon microelectrodes</title>
+                        <author>
+                            <persName>
+                                <forename type="first">J.L.</forename>
+                                <surname>Li</surname>
+                            </persName>
+                            <affiliation>Department of Chemistry, University of Utah, Salt Lake City, UT 84112 USA</affiliation>
+                        </author>
+                        <author>
+                            <persName>
+                                <forename type="first">S.</forename>
+                                <surname>Pons</surname>
+                            </persName>
+                            <affiliation>Department of Chemistry, University of Utah, Salt Lake City, UT 84112 USA</affiliation>
+                        </author>
+                        <author>
+                            <persName>
+                                <forename type="first">M.</forename>
+                                <surname>Fleischmann</surname>
+                            </persName>
+                            <affiliation>Department of Chemistry University of Southampton, Southampton, Hants., S09 5NH UK</affiliation>
+                            <affiliation>To whom correspondence should be addressed.</affiliation>
+                        </author>
+                    </analytic>
+                    <monogr>
+                        <title level="j">Journal of Electroanalytical Chemistry</title>
+                        <title level="j" type="abbrev">JEC</title>
+                        <idno type="pISSN">0022-0728</idno>
+                        <idno type="PII">S0022-0728(00)X0291-4</idno>
+                        <imprint>
+                            <publisher>ELSEVIER</publisher>
+                            <date type="published" when="1991"/>
+                            <biblScope unit="vol">316</biblScope>
+                            <biblScope unit="issue">1–2</biblScope>
+                            <biblScope unit="page" from="255">255</biblScope>
+                            <biblScope unit="page" to="261">261</biblScope>
+                        </imprint>
+                    </monogr>
+                    <idno type="istex">1C8D0D628009C1136DDE77BFC3E2141F631BD017</idno>
+                    <idno type="DOI">10.1016/0022-0728(91)87050-E</idno>
+                    <idno type="PII">0022-0728(91)87050-E</idno>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <creation>
+                <date>1991</date>
+            </creation>
+            <langUsage>
+                <language ident=""/>
+            </langUsage>
+            <abstract xml:lang="en">
+                <p>A direct electrochemical method for the investigation of single molecular events is described. The high signal to noise advantage of microelectrodes is sufficient to monitor such events under certain circumstances. In this work, we monitor the adsorption of single DNA molecules from solution at carbon microdisk electrodes.</p>
+            </abstract>
+        </profileDesc>
+        <revisionDesc>
+            <change when="1991">Published</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div>
+                255
+
+                J. Electroanal. Chem., 316 (1991) 255-261
+                Eisevier Sequoia S.A., Lausanne
+
+                JEC 01608
+
+                The adsorption of single molecules of DNA on carbon
+                microelectrodes
+
+                J.L. Li a, S. Pons a and M. Fleischmann ''•*
+
+                ° Department of Chemistry, University of Utah, Salt Lake City, UT 84112 (USA)
+                Department of Chemistry University of Southampton, Southampton, Hants., S09 5NH (UK)
+
+                Abstract
+
+                A direct electrochemical method for the investigation of single molecular events is described. The high
+                signal to noise advantage of microelectrodes is sufficient to monitor such events under certain cir-
+                cumstances. In this work, we monitor the adsorption of single DNA molecules from solution at carbon
+                microdisk electrodes.
+
+                INTRODUCTION
+
+                The development of microelectrodes of sufficiently small dimensions (1 nm &lt;
+                characteristic dimension &lt; 10 jum) has opened up new opportunities for the investi-
+                gation of adsorption, conformational changes and kinetics at the molecular level. A
+                variety of strategies have been described to achieve these objectives [1-12] (for
+                reviews see refs. 13 and 14) and, depending on the particular application, the
+                measurements rely to varying extents on some or all of the following properties of
+                these electrode systems:
+
+                (i) the very high signal to noise and excellent broad band noise performance which
+
+                can be achieved with these devices (in view of the very low input capacitance to
+
+                the current measuring instruments);
+
+                (ii) the use of the microelectrodes to define the formation of an even smaller
+
+                microelectrode on the substrate surface;
+
+                (iii) the amplification of individual molecular and therefore stochastic events by
+
+                subsequent essentially deterministic processes;
+
+                256
+
+                The application of these properties and principles can be illustrated by the
+                following examples: in the nucleation and phase growth of a deposit on a suffi-
+                ciently inert substrate one can restrict nucleation to the first nucleus (e.g., silver on
+                perfect (100) single crystal faces of silver [7], a-PbO; [10], Hg [11] or Ag [12] on
+                carbon). The microelectrode substrate then serves to define the formation of an even
+                smaller microelectrode, a layer plane of silver [7] or a growth center of a-PbO^ [10],
+                Hg [11] or Ag [12] on the inert substrate (property (ii)). Nucleation is detected by
+                the essentially deterministic growth of the growth centers (property (iii)). In turn,
+                the distribution of the arrival times for an ensemble of nucleation events serves to
+                define the kinetics of formation of a single critical nucleus so that we arrive at one
+                form of kinetics at the molecular level [10-14].
+
+                The voltage gated insertion and aggregation of pore formers such as the poly-
+                peptide alamethicin into black lipid bilayers can lead to the detection of the kinetics
+                of aggregation through the amplification of the effects by the transmembrane ion
+                currents. The formation of the pore in fact serves to define a structure of molecular
+                dimensions (1-10 nm) on a bilayer substrate of macroscopic dimensions ( ~ 1 nun)
+                (properties (ii) and (iii)). The existence of these phenomena has been known for
+                some time [1-3] although their study has been greatly facilitated by the definition of
+                bilayers of smaller dimensions using flame polished capillaries [15].
+
+                In this paper we investigate a more direct approach to the study of single
+                molecular events at microelectrode substrates as exemplified by the adsorption of
+                DNA on carbon. These measurements rely principally on the properties (i) and (iv)
+                listed above (see also ref. 14).
+
+                EXPERIMENTAL
+
+                A given microelectrode was inserted into a cell of small volume (20 ml) contain-
+                ing a buffer solution as support electrolyte. This buffer was prepared from 0.18 M
+                Na;HP04 and 0.1 M NaH^PC^ (A.R. reagents) and deionized water, the pH was
+                6.90.
+
+                The linear DNA sample (PARC 133B, molar mass == 4.6 X 106 g) a mixture of
+                linear types A and B (6,500 base pairs X 660 g) was prepared as a dilute solution in
+                the buffer (3 p.g ml"2, pH = 6.90) and stored in a refrigerator.
+
+                257
+
+
+
+
+                OUTPUT
+
+                Fig. 1. Low noise high CMRR amplifier circuit used for recording of the transients due to the arrival of
+                single DNA molecules at a carbon microdisk electrode. Fig. 5. Representative values of the double layer
+                capacitance and cell resistance are shown on the figure.
+
+                A mercury pool at the base of the cell served as the working and reference
+                electrode. This pool had a potential of +0.160 V versus a saturated calomel
+                electrode. The solution was deaerated using nitrogen and a chosen dc potential was
+                applied to the cell if the measuring circuit shown in Fig. 1 was to be used.
+                Alternatively, a dc pedestal voltage and superposed ac voltage (10 mV peak to peak,
+                100 - Hz) was applied when using the measurement scheme shown in Fig. 2.
+                Adsorption leads to a change in the interfacial capacitance and, for the adsorption
+                of individual molecules of adequate size, the individual charging transients become
+                measurable. Of the two detection methods, the first is particularly suitable for the
+                measurements of the transients due to the individual molecular events whereas the
+                second is suitable for measuring low level changes in capacitance due to adsorption
+                of molecules smaller than those used in the present investigation.
+
+                AC SOURCE
+
+                CELL
+
+                REFERENCE
+                INPUT
+
+                PHASE SENSITIVE
+                DETECTOR /
+
+                LOCK-IN
+                AMPLIFIER
+
+                T &lt;•^0~ss
+
+                QUADRATURE
+                COMPONENT
+
+                QUADRATURE
+                COMPONENT
+                OF CURRENT
+
+
+
+                1.5x10 ^A
+                |CAuWiA»WNWHUWWIr%«W*			UirMmiMimMMI«»»Wl	MlnMW&gt;nMnWMMlir*«HI
+                /	V—
+                / Injection	V
+                ^	'^^^»MH^IWW	—————————————————
+
+                TIME
+
+                30s
+
+                Fig. 3. In-phase (upper plot) and quadrature (lower plot) current components at a carbon microdisk
+                electrode before and following the injection of a DNA solution into the cell.
+
+                Following the equilibration of the cell with the carbon electrode held at 0 V
+                versus the mercury pool, a sample of the dilute solution of DNA in the buffer was
+                added to 4.5 ml of this buffer in the cell to make the final volume 5 ml with the
+                DNA concentration at 6 pM. The injection tube passed from the outside of the
+                Faraday cage to the cell and the outlet tube was attached to the cell wall so as to
+                minimize disturbance. The effects due the adsorption were followed to completion.
+
+                259
+
+                CURRENT
+
+                1.5x10~1 ^
+
+
+
+
+                TIME      0.1s
+
+                Fig. 4. Transient responses recorded after the injection of the DNA solution into the cell. The time
+                segment shown is in the falling portion of the lower plot in Fig. 3.
+
+
+                CONCLUSION
+
+                The counting method described here points to several important new develop-
+                ments. At the simplest level, counting techniques will lead to the ultimate achievable
+                sensitivity in electroanalytical techniques. The detection of a flux of 0.1 molecules
+                s~1 on an electrode of the size used here should be feasible corresponding to an
+                ~ 150 fM solution. Such detection methods might well be coupled to antigen-anti-
+                body interactions at the microelectrode surface in the case of biologically active
+                materials. At the next level, counting methods should lead to advances in the study
+                of adsorption and kinetics equivalent to those achieved by the introduction of single
+                photon counting in photochemistry and related fields of research. It should be noted
+                that in the present case all the molecules reaching the surface are counted which
+                should lead to a firm basis for the statistical treatments of the time-series. Existing
+                methodology should certainly allow measurements of this type for molecules having
+                adsorption areas &gt; 100 nm2. Finally, it can be seen that the detailed shapes of the
+                charging transients can also be explored. Fig. 5. It should prove possible to derive
+                detailed information on time-dependent conformational changes accompanying
+                adsorption and reaction from measurements of this kind using suitable substrates.
+
+                ACKNOWLEDGEMENTS
+
+                The authors thank the Office of Naval Research for support of this work.
+                REFERENCES
+
+                1 P. Mueller and D.O. Rudin, Nature, 217 (1967) 713.
+
+                2 L.G.M. Gordon and D.A. Haydon, Biochhn. Biophys. Ada, 255 (1972) 1014.
+
+                3 M. Eisenberg, J.E. Hall and C.A. Mead, J. Membr. BioL, 14 (1973) 143.
+
+                4 M. Fleischmann, C. GabrieUi, M.T.G. Labram, A.I. McMullen and T.H. Wilmshurst, J. Membr. BioL,
+                55 (1980) 9.
+
+                5 M. Fleischmann, C. Gabrielli, M.T.G. Labram and T. Markvart, J. Hectroanal. Chem., 214 (1986)
+                427.
+
+                6 M. Fleischmann, C. Gabrielli and M.T.G. Labram, J. Electroanal. Chem., 2145 (1986) 441.
+
+                7 E. Budevski, W. Bostanoff, W. Witanoff, Z. Stoinoff, Z. Kotzewa and R. Kaischev, Electrochim.
+                Acta, 11 (1966) 1697.
+
+                8 B. Scharifker and G.J. Hills, J. Hectroanal. Chem., 130 (1981) 81.
+
+                9 G. Gunawardena, G.J. Huls and B. Scharifker, J. Electroanal. Chem., 130 (1981) 99.
+                10 M. Fleischmann, LJ. Li and L.M. Peter, Electrochim. Acta, 34 (1989) 475.
+
+                261
+
+                11 L.J. Li, S. Pons and M. Fleischmann, to be published.
+
+                12 M. Fleischmann, S. Pons, J. Sousa and J. Ghoroghchian, J. Electroanal. Chem., submitted.
+
+                13 R. de Levie in H. Gerischer and C. Tobias (Eds.), Advances in Electrochemistry and Electrochemical
+                Engineering, Vol. 13 Wiley-Intersrience, New York, 1984, p. l.
+
+                14 M. Fleischmann, S. Pons and J.L. Daschbach, in M.I. Montenegro, M. Ariete Queiros and J.L.
+                Daschbach (Eds.), Microelectrodes: Theory and Applications, A.S.I. Series E, 197, Kluwer, Dordrecht,
+                1991, p. 393.
+
+                15 E. Neher, B. Sakmann and J.H. Steinbach, Tslueger's Arch., 375 (1978) 219.
+
+                16 T.P. Beebe, Jr., T.E. Wilson, D.F. Ogletree, J.E. Katz, R. Balhome, M.B. Salmeron and W.J.
+                Siekhaus, Science, 243 (1989) 370.
+            </div>
+        </body>
+        <back>
+            <div type="references" xml:id="BIB1">
+                <biblStruct>
+                    <monogr>
+                        <title level="m">Nature</title>
+                        <editor>
+                            <persName>
+                                <forename type="first">P.</forename>
+                                <surname>Mueller</surname>
+                            </persName>
+                        </editor>
+                        <editor>
+                            <persName>
+                                <forename type="first">D.O.</forename>
+                                <surname>Rudin</surname>
+                            </persName>
+                        </editor>
+                        <imprint>
+                            <date type="year">1967</date>
+                            <biblScope unit="vol">217</biblScope>
+                            <biblScope unit="page" from="713">713</biblScope>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </div>
+            <div type="references" xml:id="BIB2">
+                <biblStruct>
+                    <monogr>
+                        <title level="m">Biochim. Biophys. Acta</title>
+                        <editor>
+                            <persName>
+                                <forename type="first">L.G.M.</forename>
+                                <surname>Gordon</surname>
+                            </persName>
+                        </editor>
+                        <editor>
+                            <persName>
+                                <forename type="first">D.A.</forename>
+                                <surname>Haydon</surname>
+                            </persName>
+                        </editor>
+                        <imprint>
+                            <date type="year">1972</date>
+                            <biblScope unit="vol">255</biblScope>
+                            <biblScope unit="page" from="1014">1014</biblScope>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </div>
+            <div type="references" xml:id="BIB3">
+                <biblStruct>
+                    <monogr>
+                        <title level="m">J. Membr. Biol.</title>
+                        <editor>
+                            <persName>
+                                <forename type="first">M.</forename>
+                                <surname>Eisenberg</surname>
+                            </persName>
+                        </editor>
+                        <editor>
+                            <persName>
+                                <forename type="first">J.E.</forename>
+                                <surname>Hall</surname>
+                            </persName>
+                        </editor>
+                        <editor>
+                            <persName>
+                                <forename type="first">C.A.</forename>
+                                <surname>Mead</surname>
+                            </persName>
+                        </editor>
+                        <imprint>
+                            <date type="year">1973</date>
+                            <biblScope unit="vol">14</biblScope>
+                            <biblScope unit="page" from="143">143</biblScope>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </div>
+            <div type="references" xml:id="BIB4">
+                <biblStruct>
+                    <monogr>
+                        <title level="m">J. Membr. Biol.</title>
+                        <editor>
+                            <persName>
+                                <forename type="first">M.</forename>
+                                <surname>Fleischmann</surname>
+                            </persName>
+                        </editor>
+                        <editor>
+                            <persName>
+                                <forename type="first">C.</forename>
+                                <surname>Gabrielli</surname>
+                            </persName>
+                        </editor>
+                        <editor>
+                            <persName>
+                                <forename type="first">M.T.G.</forename>
+                                <surname>Labram</surname>
+                            </persName>
+                        </editor>
+                        <editor>
+                            <persName>
+                                <forename type="first">A.I.</forename>
+                                <surname>McMullen</surname>
+                            </persName>
+                        </editor>
+                        <editor>
+                            <persName>
+                                <forename type="first">T.H.</forename>
+                                <surname>Wilmshurst</surname>
+                            </persName>
+                        </editor>
+                        <imprint>
+                            <date type="year">1980</date>
+                            <biblScope unit="vol">55</biblScope>
+                            <biblScope unit="page" from="9">9</biblScope>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </div>
+            <div type="references" xml:id="BIB5">
+                <biblStruct>
+                    <monogr>
+                        <title level="m">J. Electroanal. Chem.</title>
+                        <editor>
+                            <persName>
+                                <forename type="first">M.</forename>
+                                <surname>Fleischmann</surname>
+                            </persName>
+                        </editor>
+                        <editor>
+                            <persName>
+                                <forename type="first">C.</forename>
+                                <surname>Gabrielli</surname>
+                            </persName>
+                        </editor>
+                        <editor>
+                            <persName>
+                                <forename type="first">M.T.G.</forename>
+                                <surname>Labram</surname>
+                            </persName>
+                        </editor>
+                        <editor>
+                            <persName>
+                                <forename type="first">T.</forename>
+                                <surname>Markvart</surname>
+                            </persName>
+                        </editor>
+                        <imprint>
+                            <date type="year">1986</date>
+                            <biblScope unit="vol">214</biblScope>
+                            <biblScope unit="page" from="427">427</biblScope>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </div>
+            <div type="references" xml:id="BIB6">
+                <biblStruct>
+                    <monogr>
+                        <title level="m">J. Electroanal. Chem.</title>
+                        <editor>
+                            <persName>
+                                <forename type="first">M.</forename>
+                                <surname>Fleischmann</surname>
+                            </persName>
+                        </editor>
+                        <editor>
+                            <persName>
+                                <forename type="first">C.</forename>
+                                <surname>Gabrielli</surname>
+                            </persName>
+                        </editor>
+                        <editor>
+                            <persName>
+                                <forename type="first">M.T.G.</forename>
+                                <surname>Labram</surname>
+                            </persName>
+                        </editor>
+                        <imprint>
+                            <date type="year">1986</date>
+                            <biblScope unit="vol">2145</biblScope>
+                            <biblScope unit="page" from="441">441</biblScope>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </div>
+            <div type="references" xml:id="BIB7">
+                <biblStruct>
+                    <monogr>
+                        <title level="m">Electrochim. Acta</title>
+                        <editor>
+                            <persName>
+                                <forename type="first">E.</forename>
+                                <surname>Budevski</surname>
+                            </persName>
+                        </editor>
+                        <editor>
+                            <persName>
+                                <forename type="first">W.</forename>
+                                <surname>Bostanoff</surname>
+                            </persName>
+                        </editor>
+                        <editor>
+                            <persName>
+                                <forename type="first">W.</forename>
+                                <surname>Witanoff</surname>
+                            </persName>
+                        </editor>
+                        <editor>
+                            <persName>
+                                <forename type="first">Z.</forename>
+                                <surname>Stoinoff</surname>
+                            </persName>
+                        </editor>
+                        <editor>
+                            <persName>
+                                <forename type="first">Z.</forename>
+                                <surname>Kotzewa</surname>
+                            </persName>
+                        </editor>
+                        <editor>
+                            <persName>
+                                <forename type="first">R.</forename>
+                                <surname>Kaischev</surname>
+                            </persName>
+                        </editor>
+                        <imprint>
+                            <date type="year">1966</date>
+                            <biblScope unit="vol">11</biblScope>
+                            <biblScope unit="page" from="1697">1697</biblScope>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </div>
+            <div type="references" xml:id="BIB8">
+                <biblStruct>
+                    <monogr>
+                        <title level="m">J. Hectroanal. Chem.</title>
+                        <editor>
+                            <persName>
+                                <forename type="first">B.</forename>
+                                <surname>Scharifker</surname>
+                            </persName>
+                        </editor>
+                        <editor>
+                            <persName>
+                                <forename type="first">G.J.</forename>
+                                <surname>Hills</surname>
+                            </persName>
+                        </editor>
+                        <imprint>
+                            <date type="year">1981</date>
+                            <biblScope unit="vol">130</biblScope>
+                            <biblScope unit="page" from="81">81</biblScope>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </div>
+            <div type="references" xml:id="BIB9">
+                <biblStruct>
+                    <monogr>
+                        <title level="m">J. Electroanal. Chem.</title>
+                        <editor>
+                            <persName>
+                                <forename type="first">G.</forename>
+                                <surname>Gunawardena</surname>
+                            </persName>
+                        </editor>
+                        <editor>
+                            <persName>
+                                <forename type="first">G.J.</forename>
+                                <surname>Hills</surname>
+                            </persName>
+                        </editor>
+                        <editor>
+                            <persName>
+                                <forename type="first">B.</forename>
+                                <surname>Scharifker</surname>
+                            </persName>
+                        </editor>
+                        <imprint>
+                            <date type="year">1981</date>
+                            <biblScope unit="vol">130</biblScope>
+                            <biblScope unit="page" from="99">99</biblScope>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </div>
+            <div type="references" xml:id="BIB10">
+                <biblStruct>
+                    <monogr>
+                        <title level="m">Electrochim. Acta</title>
+                        <editor>
+                            <persName>
+                                <forename type="first">M.</forename>
+                                <surname>Fleischmann</surname>
+                            </persName>
+                        </editor>
+                        <editor>
+                            <persName>
+                                <forename type="first">L.J.</forename>
+                                <surname>Li</surname>
+                            </persName>
+                        </editor>
+                        <editor>
+                            <persName>
+                                <forename type="first">L.M.</forename>
+                                <surname>Peter</surname>
+                            </persName>
+                        </editor>
+                        <imprint>
+                            <date type="year">1989</date>
+                            <biblScope unit="vol">34</biblScope>
+                            <biblScope unit="page" from="475">475</biblScope>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </div>
+            <div type="references" xml:id="BIB11">
+                <note>L.J. Li, S. Pons and M. Fleischmann, to be published.</note>
+            </div>
+            <div type="references" xml:id="BIB12">
+                <note>M. Fleischmann, S. Pons, J. Sousa and J. Ghoroghchian, J. Electroanal. Chem., submitted.</note>
+            </div>
+            <div type="references" xml:id="BIB13">
+                <biblStruct>
+                    <monogr>
+                        <title level="m">Advances in Electrochemistry and Electrochemical Engineering</title>
+                        <editor>
+                            <persName>
+                                <forename type="first">R.</forename>
+                                <surname>de Levie</surname>
+                            </persName>
+                        </editor>
+                        <editor>
+                            <persName>
+                                <forename type="first">H.</forename>
+                                <surname>Gerischer</surname>
+                            </persName>
+                        </editor>
+                        <editor>
+                            <persName>
+                                <forename type="first">C.</forename>
+                                <surname>Tobias</surname>
+                            </persName>
+                        </editor>
+                        <imprint>
+                            <publisher>Wiley-Intersrience</publisher>
+                            <pubPlace>New York</pubPlace>
+                            <date type="year">1984</date>
+                            <biblScope unit="page" from="1">1</biblScope>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </div>
+            <div type="references" xml:id="BIB14">
+                <biblStruct type="article">
+                    <analytic>
+                        <title level="a">Microelectrodes: Theory and Applications</title>
+                        <author>
+                            <persName>
+                                <forename type="first">M.</forename>
+                                <surname>Fleischmann</surname>
+                            </persName>
+                        </author>
+                        <author>
+                            <persName>
+                                <forename type="first">S.</forename>
+                                <surname>Pons</surname>
+                            </persName>
+                        </author>
+                        <author>
+                            <persName>
+                                <forename type="first">J.L.</forename>
+                                <surname>Daschbach</surname>
+                            </persName>
+                        </author>
+                    </analytic>
+                    <monogr>
+                        <title level="m">A.S.I. Series E, 197</title>
+                        <editor>
+                            <persName>
+                                <forename type="first">M.I.</forename>
+                                <surname>Montenegro</surname>
+                            </persName>
+                        </editor>
+                        <editor>
+                            <persName>
+                                <forename type="first">M.Arlete</forename>
+                                <surname>Queiros</surname>
+                            </persName>
+                        </editor>
+                        <editor>
+                            <persName>
+                                <forename type="first">J.L.</forename>
+                                <surname>Daschbach</surname>
+                            </persName>
+                        </editor>
+                        <imprint>
+                            <date type="year">1991</date>
+                            <publisher>Kluwer</publisher>
+                            <pubPlace>Dordrecht</pubPlace>
+                            <biblScope unit="page" from="393">393</biblScope>
+                        </imprint>
+                    </monogr>
+                    <series>
+                        <title level="m">A.S.I. Series E, 197</title>
+                        <editor>
+                            <persName>
+                                <forename type="first">M.I.</forename>
+                                <surname>Montenegro</surname>
+                            </persName>
+                        </editor>
+                        <editor>
+                            <persName>
+                                <forename type="first">M.Arlete</forename>
+                                <surname>Queiros</surname>
+                            </persName>
+                        </editor>
+                        <editor>
+                            <persName>
+                                <forename type="first">J.L.</forename>
+                                <surname>Daschbach</surname>
+                            </persName>
+                        </editor>
+                    </series>
+                </biblStruct>
+            </div>
+            <div type="references" xml:id="BIB15">
+                <biblStruct>
+                    <monogr>
+                        <title level="m">Tslueger's Arch.</title>
+                        <editor>
+                            <persName>
+                                <forename type="first">E.</forename>
+                                <surname>Neher</surname>
+                            </persName>
+                        </editor>
+                        <editor>
+                            <persName>
+                                <forename type="first">B.</forename>
+                                <surname>Sakmann</surname>
+                            </persName>
+                        </editor>
+                        <editor>
+                            <persName>
+                                <forename type="first">J.H.</forename>
+                                <surname>Steinbach</surname>
+                            </persName>
+                        </editor>
+                        <imprint>
+                            <date type="year">1978</date>
+                            <biblScope unit="vol">375</biblScope>
+                            <biblScope unit="page" from="219">219</biblScope>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </div>
+            <div type="references" xml:id="BIB16">
+                <biblStruct>
+                    <monogr>
+                        <title level="m">Science</title>
+                        <editor>
+                            <persName>
+                                <forename type="first">T.P.</forename>
+                                <surname>Beebe,  Jr.</surname>
+                            </persName>
+                        </editor>
+                        <editor>
+                            <persName>
+                                <forename type="first">T.E.</forename>
+                                <surname>Wilson</surname>
+                            </persName>
+                        </editor>
+                        <editor>
+                            <persName>
+                                <forename type="first">D.F.</forename>
+                                <surname>Ogletree</surname>
+                            </persName>
+                        </editor>
+                        <editor>
+                            <persName>
+                                <forename type="first">J.E.</forename>
+                                <surname>Katz</surname>
+                            </persName>
+                        </editor>
+                        <editor>
+                            <persName>
+                                <forename type="first">R.</forename>
+                                <surname>Balhorne</surname>
+                            </persName>
+                        </editor>
+                        <editor>
+                            <persName>
+                                <forename type="first">M.B.</forename>
+                                <surname>Salmeron</surname>
+                            </persName>
+                        </editor>
+                        <editor>
+                            <persName>
+                                <forename type="first">W.J.</forename>
+                                <surname>Siekhaus</surname>
+                            </persName>
+                        </editor>
+                        <imprint>
+                            <date type="year">1989</date>
+                            <biblScope unit="vol">243</biblScope>
+                            <biblScope unit="page" from="370">370</biblScope>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </div>
+        </back>
+    </text>
+</TEI>

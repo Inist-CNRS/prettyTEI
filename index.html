@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pretty TEI demo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/tei.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6">
+                    <div class="js-tei"></div>
+                </div>
+                <div class="col-xs-6">
+                    
+                </div>
+            </div>
+        </div>
+        <script>
+            $(".js-tei").append("<div class='tei'></div>").children("div.tei").load("/tei/test.xml");
+        </script>
+    </body>
+</html>
