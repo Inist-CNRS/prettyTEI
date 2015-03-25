@@ -6,63 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="dist/css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/tei.css">
-        <style>
-        body{
-            background: #DBDADB;
-        }
-        h1{
-            text-align: center;
-            margin-bottom: 50px; 
-        }
-            #uploadDiv{
-                text-align: center;
-            }
-            #dropArea {
-                display: flex;
-                justify-content:center;
-                align-items: center;
-              border: 10px dashed;
-              border-radius: 10px;
-              border-color: gray;
-              width: 200px;
-              height: 200px;
-              margin: 0 auto;
-              transition :  all 450ms;
-              font-size: 12px;
-            }
-            #dropArea:hover {
-              transform : scale(1.06);
-              border-color: #555;
-            }
-            .hover {
-              transform : scale(1.06);
-              border-color: #555 !important;
-            }
-            .pictures{
-                max-width: 100%;
-                height: auto;
-                box-shadow: 0px 0px 19px #555;
-            }
-            #listDiv{
-                margin-top: 150px; 
-            }
-            .figurex:hover{
-                cursor: pointer;
-            }
-            .figurex:hover > .pictures{
-                box-shadow: 0px 0px 19px #000;
-            }
 
-            .figurex figcaption{
-                text-align: center;
-                color: #555;
-                background: #fff;
-            }
-            .modal-dialog{
-                z-index: 9999;
-            }
-        </style>
+        <!-- html Style -->
+        <link rel="stylesheet" href="dist/css/style.css">
+
+        <!-- TEI LESS generated Style -->
+        <link rel="stylesheet" href="css/tei.css">
     </head>
     <body>
         <div class="container">
@@ -82,6 +31,12 @@
         <script src="dist/js/bootstrap.min.js"></script>
         <script>
 
+
+            /*
+            * dropArea is the drag & drop zone
+            * listDiv is the section to watch sended elements
+            * nbOfFiles is an int incremented when send a file
+            */
             var dropArea = $('#dropArea'),
                 listDiv = $("#listDiv"),
                 nbOfFiles = 0;
@@ -113,11 +68,13 @@
                     // Loop through files with a closure so every FileReader are isolated.
                     var reader = new FileReader();
                     reader.onload = function(event) { 
-                            // get file content , name  
+                            // get file content , name
                             var name = files[i].name;
                             var text = event.target.result; 
-                            var figure = $('<figure class="figurex col-sm-3"></figure>');
-                            var div = '<div class="modal fade" id="figcaption'+ nbOfFiles +'" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">\
+
+                            //create figure & div modal 
+                            var figure = $('<figure class="figureFile col-sm-3"></figure>'),
+                                div = '<div class="modal fade" id="figcaption'+ nbOfFiles +'" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">\
                               <div class="modal-dialog">\
                                 <div class="modal-content">\
                                   <div class="modal-header">\
@@ -133,11 +90,11 @@
                                 </div>\
                               </div>\
                             </div>';
-                            console.log("name : " , name);
-                            console.log("text : " , text);
-                            var li = document.createElement("li");
-                            li.innerHTML = name + "____" + text;
+
+                            // Add img & figcaption (file name) to figure
                             figure.append('<img src="dist/img/xml.jpg" class="pictures" alt="xml picture" data-toggle="modal" data-target="#figcaption'+ nbOfFiles +'">','<figcaption>'+ name +'</figcaption>');
+
+                            // Add all created elements to html
                             listDiv.append(figure);
                             listDiv.append(div)
 
@@ -148,7 +105,7 @@
                 }
             }
         });
-                         //$(".js-tei").append("<div class='tei'></div>").children("div.tei").load("tei/test.xml");
+        //$(".js-tei").append("<div class='tei'></div>").children("div.tei").load("tei/test.xml");
         </script>
     </body>
 </html>
