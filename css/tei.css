@@ -69,14 +69,11 @@ text. Otherwise they show up in the header. */
   /* styles for html shell and html elements in TEI (e.g.,<a> and <img>) */
   margin: 0;
   padding: 0;
-  margin-left: 2em;
-  margin-right: 4em;
   padding: 2.5em;
   font-family: "Gentium Book Basic", Cochin, Georgia, Serif;
   font-size: 14pt;
   background-color: #ebebeb;
   color: #292929;
-  width: 33em;
   /* xml-serialization */
   /* loading animation */
   /* facsViewer */
