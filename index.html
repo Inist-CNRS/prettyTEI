@@ -4,23 +4,96 @@
         <title>Pretty TEI demo</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/css/tei.css">
+        <link rel="stylesheet" href="css/tei.css">
+        <style>
+        body{
+            background: #DBDADB;
+        }
+            #uploadDiv{
+                text-align: center;
+            }
+            #dropArea {
+                display: flex;
+                justify-content:center;
+                align-items: center;
+              border: 10px dashed;
+              border-radius: 10px;
+              border-color: gray;
+              width: 200px;
+              height: 200px;
+              margin: 0 auto;
+              transition :  all 450ms;
+              font-size: 12px;
+            }
+            #dropArea:hover {
+              transform : scale(1.06);
+              border-color: black;
+            }
+        </style>
     </head>
     <body>
         <div class="container">
+            <h1>Drag & Drop your TEI files to watch them with prettyTEI:</h1>
             <div class="row">
-                <div class="col-xs-6">
-                    <div class="js-tei"></div>
-                </div>
-                <div class="col-xs-6">
+                <div class="col-sm-2"></div>
+                <section id="uploadDiv" class="col-sm-8">
+                    <div id="dropArea">Drag & drop files here , or just click</div>
+                </section>
+
+                <section id="listDiv" class="col-sm-8">
                     
-                </div>
+                </section>
             </div>
         </div>
+        <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
         <script>
-            $(".js-tei").append("<div class='tei'></div>").children("div.tei").load("/tei/test.xml");
+
+            var dropArea = $('#dropArea');
+            var ul = document.querySelector("#ulx");
+
+             $(window).on('dragenter', function(){
+                $(this).preventDefault();
+            });
+
+            dropArea.bind({
+              dragover: function() {
+                $(this).addClass('hover');
+                return false;
+              },
+              dragend: function() {
+                $(this).removeClass('hover');
+                return false;
+              },
+              drop: function(e) {
+                e = e || window.event;
+                e.preventDefault();
+
+                // jQuery wraps the originalEvent, so we try to detect that here...
+                e = e.originalEvent || e;
+                // Using e.files with fallback because e.dataTransfer is immutable and can't be overridden in Polyfills (http://sandbox.knarly.com/js/dropfiles/).            
+                var files = (e.files || e.dataTransfer.files);
+
+                for (var i = 0; i < files.length; i++) {
+                  (function(i) {
+                    // Loop through our files with a closure so each of our FileReader's are isolated.
+                    var reader = new FileReader();
+                    reader.onload = function(event) { 
+                            // get file content  
+                            var name = files[i].name;
+                            var text = event.target.result; 
+                            console.log("name : " , name);
+                            console.log("text : " , text);
+                            var li = document.createElement("li");
+                            li.innerHTML = name + "____" + text;
+                            droite.appendChild(li);
+                        }
+                        reader.readAsText(files[i], "UTF-8");
+                    })(i);
+                }
+            }
+        });
+                         //$(".js-tei").append("<div class='tei'></div>").children("div.tei").load("tei/test.xml");
         </script>
     </body>
 </html>
