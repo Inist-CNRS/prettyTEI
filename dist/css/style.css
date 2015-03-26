@@ -62,6 +62,7 @@ h1{
   background: #fff;
 }
 
-.modal-dialog{
+.teiModal{
+  width: 960px;
   z-index: 9999;
 }
