@@ -41,6 +41,45 @@
                 listDiv = $("#listDiv"),
                 nbOfFiles = 0;
 
+            function readFile(file,nbOfFiles) {
+                    // Loop through files with a closure so every FileReader are isolated.
+                    var reader = new FileReader();
+                    reader.onload = function(event) { 
+                            // get file content , name
+                            var name = file.name;
+                            var text = event.target.result; 
+
+                            //create figure & div modal 
+                            var figure = $('<figure class="figureFile col-sm-3"></figure>'),
+                                div = '<div class="modal fade" id="fileContent'+ nbOfFiles +'" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">\
+                              <div class="modal-dialog">\
+                                <div class="modal-content">\
+                                  <div class="modal-header">\
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>\
+                                    <h4 class="modal-title" id="myModalLabel">'+ name +'</h4>\
+                                  </div>\
+                                  <div class="modal-body tei">\
+                                    '+ text +'\
+                                  </div>\
+                                  <div class="modal-footer">\
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>\
+                                  </div>\
+                                </div>\
+                              </div>\
+                            </div>';
+
+                            // Add img & figcaption (file name) to figure
+                            figure.append('<img src="dist/img/xml.jpg" class="pictures" alt="xml picture" data-toggle="modal" data-target="#fileContent'+ nbOfFiles +'">','<figcaption>'+ name +'</figcaption>');
+
+                            // Add all created elements to html
+                            listDiv.append(figure);
+                            listDiv.append(div)
+
+                        }
+                        reader.readAsText(file, "UTF-8");
+                        
+            };
+
 
             dropArea.bind({
               // Effect on dragover
@@ -63,45 +102,10 @@
            
                 var files = (e.files || e.dataTransfer.files);
 
+                // For every file
                 for (var i = 0; i < files.length; i++) {
-                  (function(i) {
-                    // Loop through files with a closure so every FileReader are isolated.
-                    var reader = new FileReader();
-                    reader.onload = function(event) { 
-                            // get file content , name
-                            var name = files[i].name;
-                            var text = event.target.result; 
-
-                            //create figure & div modal 
-                            var figure = $('<figure class="figureFile col-sm-3"></figure>'),
-                                div = '<div class="modal fade" id="figcaption'+ nbOfFiles +'" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">\
-                              <div class="modal-dialog">\
-                                <div class="modal-content">\
-                                  <div class="modal-header">\
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>\
-                                    <h4 class="modal-title" id="myModalLabel">'+ name +'</h4>\
-                                  </div>\
-                                  <div class="modal-body tei">\
-                                    '+ text +'\
-                                  </div>\
-                                  <div class="modal-footer">\
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>\
-                                  </div>\
-                                </div>\
-                              </div>\
-                            </div>';
-
-                            // Add img & figcaption (file name) to figure
-                            figure.append('<img src="dist/img/xml.jpg" class="pictures" alt="xml picture" data-toggle="modal" data-target="#figcaption'+ nbOfFiles +'">','<figcaption>'+ name +'</figcaption>');
-
-                            // Add all created elements to html
-                            listDiv.append(figure);
-                            listDiv.append(div)
-
-                        }
-                        reader.readAsText(files[i], "UTF-8");
-                        nbOfFiles++;
-                    })(i);
+                    readFile(files[i],nbOfFiles);
+                    nbOfFiles++;
                 }
             }
         });
