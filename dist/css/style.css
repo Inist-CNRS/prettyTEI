@@ -10,6 +10,7 @@ h1{
 #uploadDiv{
   text-align: center;
 }
+
 #dropArea {
   display: flex;
   justify-content:center;
@@ -23,34 +24,44 @@ h1{
   transition :  all 450ms;
   font-size: 12px;
 }
+
 #dropArea:hover {
   transform : scale(1.06);
   border-color: #555;
 }
+
 .hover {
   transform : scale(1.06);
   border-color: #555 !important;
 }
+
 .pictures{
   height: auto;
   max-width: 100%;
   box-shadow: 0px 0px 19px #555;
 }
 #listDiv{
-    margin-top: 150px; 
+  margin-top: 150px; 
 }
+
+.figureFile{
+  margin-bottom: 50px;
+}
+
 .figureFile:hover{
-    cursor: pointer;
+  cursor: pointer;
 }
+
 .figureFile:hover > .pictures{
-    box-shadow: 0px 0px 19px #000;
+  box-shadow: 0px 0px 19px #000;
 }
 
 .figureFile figcaption{
-    text-align: center;
-    color: #555;
-    background: #fff;
+  text-align: center;
+  color: #555;
+  background: #fff;
 }
+
 .modal-dialog{
-    z-index: 9999;
+  z-index: 9999;
 }
