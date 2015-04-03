@@ -16,6 +16,16 @@
         <link rel="stylesheet" href="dist/css/formTei.css">
     </head>
     <body>
+
+
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-inverse navbar-top">
+          <div class="container">
+            <div class="navbar-header prettyTitle">
+              <a class="navbar-brand" href="#">PrettyTEI</a>
+            </div>
+        </nav>
+
         <div class="container">
             <div class="row">
                 <h1>Drag & Drop your TEI files to watch them with prettyTEI:</h1>
@@ -24,7 +34,9 @@
                 <div class="col-sm-2"></div>
 
                 <section id="uploadDiv" class="col-sm-8">
-                    <input id="switch-offColor" data-off-color="warning" data-on-text="Contenu" data-off-text="Forme" type="checkbox">
+                    <div class="jumbotron">
+                        <input id="switch-offColor" data-off-color="warning" data-on-text="Contenu" data-off-text="Forme" type="checkbox">
+                    </div>
                     <div id="dropArea" draggable='true'>Drag & drop files here</div>
                 </section>
 

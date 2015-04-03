@@ -1,10 +1,21 @@
 body{
-  background: #DBDADB;
+  background: #fff;
 }
 
 h1{
   margin-bottom: 50px; 
   text-align: center;
+}
+
+.prettyTitle{
+  float: none;
+  text-align: center;
+}
+
+.prettyTitle a{
+  float: none;
+  line-height: 50px;
+  color: #fff !important;
 }
 
 #uploadDiv{
