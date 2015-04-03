@@ -1,8 +1,8 @@
 @import url('http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic|Gentium+Book+Basic:400,400italic,700,700italic');
 /*
-* viewContent.less to read a TEI file
+* viewForm.less to check TEI structuration
 */
-.contentTei {
+.formTei {
   /* US Style Quotes */
   /* UK-Style Quotes */
   /* teibp classes */
@@ -70,13 +70,13 @@ text. Otherwise they show up in the header. */
   padding: 2.5em;
   font-family: "Gentium Book Basic", Cochin, Georgia, Serif;
   font-size: 14pt;
-  background-color: red;
+  background-color: blue;
   color: #292929;
   /* xml-serialization */
   /* loading animation */
   /* facsViewer */
 }
-.contentTei .note-like {
+.formTei .note-like {
   display: block;
   margin: 1.5em auto 1.5em auto;
   padding: .5em 1.5em 1.5em 1.5em;
@@ -94,24 +94,24 @@ text. Otherwise they show up in the header. */
   -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
 }
-.contentTei .quotesUS {
+.formTei .quotesUS {
   quotes: "\201c" "\201d" "\2018" "\2019" "\201c" "\201d" "\2018" "\2019" "\201c" "\201d" "\2018" "\2019" "\201c" "\201d";
 }
-.contentTei .quotesUK {
+.formTei .quotesUK {
   quotes: "\2018" "\2019" "\201c" "\201d" "\2018" "\2019" "\201c" "\201d" "\2018" "\2019" "\201c" "\201d" "\2018" "\2019";
 }
-.contentTei .quotes {
+.formTei .quotes {
   quotes: "\201c" "\201d" "\2018" "\2019" "\201c" "\201d" "\2018" "\2019" "\201c" "\201d" "\2018" "\2019" "\201c" "\201d";
 }
-.contentTei .block-margins {
+.formTei .block-margins {
   display: block;
   margin-top: 1em;
   margin-bottom: 1em;
 }
-.contentTei .-teibp-thumbnail {
+.formTei .-teibp-thumbnail {
   max-height: 60px;
 }
-.contentTei .-teibp-pb {
+.formTei .-teibp-pb {
   display: block;
   width: 100%;
   text-align: right;
@@ -119,319 +119,319 @@ text. Otherwise they show up in the header. */
   margin: 2em 0 2em 0;
   font-size: 11pt;
 }
-.contentTei .box-shadow {
+.formTei .box-shadow {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
 }
-.contentTei .hide {
+.formTei .hide {
   display: none;
 }
-.contentTei .mono {
+.formTei .mono {
   font-family: Courier,monospace;
 }
-.contentTei .page-setup {
+.formTei .page-setup {
   margin-left: 2em;
   margin-right: 4em;
   padding: 2.5em;
   font-family: "Gentium Book Basic", Cochin, Georgia, Serif;
   font-size: 14pt;
-  background-color: red;
+  background-color: blue;
   color: #292929;
 }
-.contentTei .table-border {
+.formTei .table-border {
   /*
 border-left: 2px solid @border-color;
 border-top:2px solid @border-color;
 */
   border: 1px dotted #aaaaaa;
 }
-.contentTei choice abbr + expan:before,
-.contentTei choice expan + abbr:before,
-.contentTei choice sic + corr:before,
-.contentTei choice corr + sic:before,
-.contentTei choice orig + reg:before,
-.contentTei choice reg + orig:before {
+.formTei choice abbr + expan:before,
+.formTei choice expan + abbr:before,
+.formTei choice sic + corr:before,
+.formTei choice corr + sic:before,
+.formTei choice orig + reg:before,
+.formTei choice reg + orig:before {
   content: " (";
 }
-.contentTei choice abbr + expan:after,
-.contentTei choice expan + abbr:after,
-.contentTei choice sic + corr:after,
-.contentTei choice corr + sic:after,
-.contentTei choice orig + reg:after,
-.contentTei choice reg + orig:after {
+.formTei choice abbr + expan:after,
+.formTei choice expan + abbr:after,
+.formTei choice sic + corr:after,
+.formTei choice corr + sic:after,
+.formTei choice orig + reg:after,
+.formTei choice reg + orig:after {
   content: ")";
 }
-.contentTei ab {
+.formTei ab {
   display: block;
   margin-top: 1em;
   margin-bottom: 1em;
 }
-.contentTei accMat {
+.formTei accMat {
   display: block;
 }
-.contentTei accMat:before {
+.formTei accMat:before {
   content: "accompanying materials: ";
 }
-.contentTei acquisition {
+.formTei acquisition {
   display: block;
   margin-top: 0;
   margin-bottom: 0;
 }
-.contentTei acquisition:before {
+.formTei acquisition:before {
   font-weight: bold;
   content: "acquisition";
 }
-.contentTei activity {
+.formTei activity {
   display: block;
 }
-.contentTei activity:before {
+.formTei activity:before {
   content: "activity: ";
 }
-.contentTei actor {
+.formTei actor {
   /* Empty Rule Set */
 }
-.contentTei add {
+.formTei add {
   vertical-align: super;
   font-size: 90%;
 }
-.contentTei add[place=below] {
+.formTei add[place=below] {
   vertical-align: sub;
   font-size: 90%;
 }
-.contentTei addName {
+.formTei addName {
   /* Empty Rule Set */
 }
-.contentTei addSpan {
+.formTei addSpan {
   /* Empty Rule Set */
 }
-.contentTei additional {
+.formTei additional {
   display: block;
 }
-.contentTei additions {
+.formTei additions {
   display: block;
 }
-.contentTei additions:before {
+.formTei additions:before {
   content: "Significant additions within the document: ";
 }
-.contentTei addrLine {
+.formTei addrLine {
   display: block;
 }
-.contentTei address {
+.formTei address {
   /* Empty Rule Set */
 }
-.contentTei address[rend~="block"],
-.contentTei addresss[rendition~="#block"] {
+.formTei address[rend~="block"],
+.formTei addresss[rendition~="#block"] {
   display: block;
 }
-.contentTei adminInfo {
+.formTei adminInfo {
   display: block;
 }
-.contentTei affiliation {
+.formTei affiliation {
   /* Empty Rule Set */
 }
-.contentTei age {
+.formTei age {
   /* Empty Rule Set */
 }
-.contentTei alt {
+.formTei alt {
   /* Empty Rule Set */
 }
-.contentTei altGrp {
+.formTei altGrp {
   /* Empty Rule Set */
 }
-.contentTei altIdent {
+.formTei altIdent {
   /* Empty Rule Set */
 }
-.contentTei altIdentifier {
+.formTei altIdentifier {
   display: block;
 }
-.contentTei altIdentifier:before {
+.formTei altIdentifier:before {
   content: "Alternate ID: ";
 }
-.contentTei am {
+.formTei am {
   /* Empty Rule Set */
 }
-.contentTei analytic {
+.formTei analytic {
   /* Empty Rule Set */
 }
-.contentTei anchor {
+.formTei anchor {
   /* Empty Rule Set */
 }
-.contentTei app {
+.formTei app {
   display: block;
 }
-.contentTei appInfo {
+.formTei appInfo {
   display: block;
 }
-.contentTei appInfo:before {
+.formTei appInfo:before {
   content: "Application information: ";
 }
-.contentTei application {
+.formTei application {
   display: block;
 }
-.contentTei application:after {
+.formTei application:after {
   content: " " attr(version);
 }
-.contentTei arc {
+.formTei arc {
   /* Empty Rule Set */
 }
-.contentTei argument {
+.formTei argument {
   display: block;
 }
-.contentTei att {
+.formTei att {
   font-family: Courier,monospace;
 }
-.contentTei att:before {
+.formTei att:before {
   content: "@";
 }
-.contentTei attDef {
+.formTei attDef {
   /* Empty Rule Set */
 }
-.contentTei attList {
+.formTei attList {
   /* Empty Rule Set */
 }
-.contentTei attRef {
+.formTei attRef {
   /* Empty Rule Set */
 }
-.contentTei author {
+.formTei author {
   /* Empty Rule Set */
 }
-.contentTei titleStmt > author {
+.formTei titleStmt > author {
   display: block;
   font-family: Arvo, sans-serif;
   font-weight: normal;
   margin-bottom: 1em;
 }
-.contentTei authority {
+.formTei authority {
   /* Empty Rule Set */
 }
-.contentTei publicationStmt > availability {
+.formTei publicationStmt > availability {
   font-size: 80%;
 }
-.contentTei publicationStmt > availability:before {
+.formTei publicationStmt > availability:before {
   font-weight: bold;
   content: "Availability: ";
 }
-.contentTei publicationStmt > availability[status]:before {
+.formTei publicationStmt > availability[status]:before {
   font-weight: bold;
   content: "Availability (" attr(status) "): ";
 }
-.contentTei back {
+.formTei back {
   display: block;
 }
-.contentTei bibl {
+.formTei bibl {
   /* Empty Rule Set */
 }
-.contentTei bibl[rend~="block"],
-.contentTei bibl[rendition~="#block"] {
+.formTei bibl[rend~="block"],
+.formTei bibl[rendition~="#block"] {
   display: block;
   padding-left: 2em;
   text-indent: -2em;
 }
-.contentTei biblFull {
+.formTei biblFull {
   display: block;
 }
-.contentTei biblScope {
+.formTei biblScope {
   /* Empty Rule Set */
 }
-.contentTei biblStruct {
+.formTei biblStruct {
   /* Empty Rule Set */
 }
-.contentTei bicond {
+.formTei bicond {
   /* Empty Rule Set */
 }
-.contentTei binary {
+.formTei binary {
   /* Empty Rule Set */
 }
-.contentTei binaryObject {
+.formTei binaryObject {
   /* Empty Rule Set */
 }
-.contentTei binding {
+.formTei binding {
   display: block;
 }
-.contentTei binding:before {
+.formTei binding:before {
   content: "Binding: \a";
   white-space: pre-wrap;
 }
-.contentTei binding[contemporary]:before {
+.formTei binding[contemporary]:before {
   content: "Binding: \A" "Contemporary: " attr(contemporary) "\A";
   white-space: pre-wrap;
 }
-.contentTei bindingDesc {
+.formTei bindingDesc {
   display: block;
 }
-.contentTei bindngDesc:before {
+.formTei bindngDesc:before {
   content: "Binding Description: \A";
 }
-.contentTei birth {
+.formTei birth {
   display: block;
 }
-.contentTei birth:before {
+.formTei birth:before {
   content: "Birth: ";
 }
-.contentTei bloc {
+.formTei bloc {
   /* Empty Rule Set */
 }
-.contentTei broadcast {
+.formTei broadcast {
   /* Empty Rule Set */
 }
-.contentTei byline {
+.formTei byline {
   /* Empty Rule Set */
 }
-.contentTei c {
+.formTei c {
   /* Empty Rule Set */
 }
-.contentTei cRefPattern {
+.formTei cRefPattern {
   display: none;
 }
-.contentTei caesura {
+.formTei caesura {
   /* Empty Rule Set */
 }
-.contentTei camera {
+.formTei camera {
   /* Empty Rule Set */
 }
-.contentTei caption {
+.formTei caption {
   display: block;
   margin-top: 1em;
   margin-bottom: 1em;
 }
-.contentTei case[value]:before {
+.formTei case[value]:before {
   font-weight: bold;
   content: attr(value) " ";
 }
-.contentTei castGroup {
+.formTei castGroup {
   display: block;
   margin-top: 1em;
   margin-bottom: 1em;
 }
-.contentTei castItem {
+.formTei castItem {
   display: list-item;
   list-style-type: none;
 }
-.contentTei castList {
+.formTei castList {
   display: block;
   margin-top: 1em;
   margin-bottom: 1em;
   margin-left: 2em;
 }
-.contentTei catDesc {
+.formTei catDesc {
   /* Empty Rule Set */
 }
-.contentTei catRef {
+.formTei catRef {
   /* Empty Rule Set */
 }
-.contentTei category {
+.formTei category {
   /* Empty Rule Set */
 }
-.contentTei cb {
+.formTei cb {
   display: block;
   margin-top: 1em;
   margin-bottom: 1em;
 }
-.contentTei cb:before {
+.formTei cb:before {
   content: "[column break]";
 }
-.contentTei cell {
+.formTei cell {
   display: table-cell;
   padding: 1em 1.5em 1em 1em;
   /*
@@ -441,150 +441,150 @@ border-top:2px solid @border-color;
   border: 1px dotted #aaaaaa;
   width: 100%;
 }
-.contentTei [role=label] {
+.formTei [role=label] {
   font-weight: bold;
 }
-.contentTei certainty {
+.formTei certainty {
   /* Empty Rule Set */
 }
-.contentTei change {
+.formTei change {
   /* Empty Rule Set */
 }
-.contentTei channel {
+.formTei channel {
   /* Empty Rule Set */
 }
-.contentTei charDecl {
+.formTei charDecl {
   display: none;
 }
-.contentTei charName {
+.formTei charName {
   /* Empty Rule Set */
 }
-.contentTei charProp {
+.formTei charProp {
   /* Empty Rule Set */
 }
-.contentTei choice {
+.formTei choice {
   /* Empty Rule Set */
 }
-.contentTei cit {
+.formTei cit {
   /* Empty Rule Set */
 }
-.contentTei cl {
+.formTei cl {
   /* Empty Rule Set */
 }
-.contentTei classCode {
+.formTei classCode {
   /* Empty Rule Set */
 }
-.contentTei classDecl {
+.formTei classDecl {
   /* Empty Rule Set */
 }
-.contentTei classRef {
+.formTei classRef {
   /* Empty Rule Set */
 }
-.contentTei classSpec {
+.formTei classSpec {
   /* Empty Rule Set */
 }
-.contentTei classes {
+.formTei classes {
   /* Empty Rule Set */
 }
-.contentTei climate {
+.formTei climate {
   display: block;
   margin-top: 1em;
   margin-bottom: 1em;
 }
-.contentTei climate:before {
+.formTei climate:before {
   font-weight: bold;
   content: "Climate: ";
 }
-.contentTei closer {
+.formTei closer {
   /* Empty Rule Set */
 }
-.contentTei code {
+.formTei code {
   font-family: Courier,monospace;
 }
-.contentTei collation {
+.formTei collation {
   display: block;
   margin-top: 1em;
   margin-bottom: 1em;
 }
-.contentTei collection {
+.formTei collection {
   /* Empty Rule Set */
 }
-.contentTei colloc {
+.formTei colloc {
   /* Empty Rule Set */
 }
-.contentTei colophon {
+.formTei colophon {
   display: block;
   margin-top: 1em;
   margin-bottom: 1em;
 }
-.contentTei cond {
+.formTei cond {
   /* Empty Rule Set */
 }
-.contentTei condition {
+.formTei condition {
   display: block;
   margin-top: 1em;
   margin-bottom: 1em;
 }
-.contentTei constitution {
+.formTei constitution {
   display: block;
   margin-top: 1em;
   margin-bottom: 1em;
 }
-.contentTei constitution:before {
+.formTei constitution:before {
   font-weight: bold;
   content: "Constitution: ";
 }
-.contentTei constitution[type] {
+.formTei constitution[type] {
   display: block;
   margin-top: 1em;
   margin-bottom: 1em;
 }
-.contentTei constitution[type]:before {
+.formTei constitution[type]:before {
   font-weight: bold;
   content: "Constitution (" attr(type) "): ";
 }
-.contentTei constitution[type=frags] {
+.formTei constitution[type=frags] {
   display: block;
   margin-top: 1em;
   margin-bottom: 1em;
 }
-.contentTei constitution[type=frags]:before {
+.formTei constitution[type=frags]:before {
   font-weight: bold;
   content: "Constitution (fragments): ";
 }
-.contentTei constraint {
+.formTei constraint {
   /* Empty Rule Set */
 }
-.contentTei constraintSpec {
+.formTei constraintSpec {
   /* Empty Rule Set */
 }
-.contentTei content {
+.formTei content {
   /* Empty Rule Set */
 }
-.contentTei corr {
+.formTei corr {
   /* Empty Rule Set */
 }
-.contentTei correction {
+.formTei correction {
   /* Empty Rule Set */
 }
-.contentTei country {
+.formTei country {
   /* Empty Rule Set */
 }
-.contentTei creation {
+.formTei creation {
   /* Empty Rule Set */
 }
-.contentTei custEvent {
+.formTei custEvent {
   display: list-item;
 }
-.contentTei custodialHist {
+.formTei custodialHist {
   display: block;
   margin-top: 1em;
   margin-bottom: 1em;
 }
-.contentTei date[when]:empty:before {
+.formTei date[when]:empty:before {
   content: attr(when);
 }
-.contentTei egXML {
+.formTei egXML {
   display: block;
   font-size: 80%;
   margin-left: 1em;
@@ -597,125 +597,125 @@ border-top:2px solid @border-color;
   font-family: monospace;
   white-space: pre;
 }
-.contentTei encodingDesc {
+.formTei encodingDesc {
   display: none;
 }
-.contentTei epigraph {
+.formTei epigraph {
   display: block;
   margin-top: 1em;
   margin-bottom: 1em;
 }
-.contentTei fileDesc > extent {
+.formTei fileDesc > extent {
   display: none;
 }
-.contentTei figure {
+.formTei figure {
   display: block;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
-.contentTei g {
+.formTei g {
   /* Empty Rule Set */
 }
-.contentTei gap {
+.formTei gap {
   /* GLS: Depending upon how we handle gap and lacuna, we may want to enclose in [] */
 }
-.contentTei gb {
+.formTei gb {
   /* Empty Rule Set */
 }
-.contentTei gen {
+.formTei gen {
   /* Empty Rule Set */
 }
-.contentTei genName {
+.formTei genName {
   /* Empty Rule Set */
 }
-.contentTei geo {
+.formTei geo {
   /* Empty Rule Set */
 }
-.contentTei geoDecl {
+.formTei geoDecl {
   /* Empty Rule Set */
 }
-.contentTei geogFeat {
+.formTei geogFeat {
   /* Empty Rule Set */
 }
-.contentTei geogName {
+.formTei geogName {
   /* Empty Rule Set */
 }
-.contentTei gi {
+.formTei gi {
   font-family: Courier,monospace;
 }
-.contentTei gi:before {
+.formTei gi:before {
   content: "<";
 }
-.contentTei gi:after {
+.formTei gi:after {
   content: ">";
 }
-.contentTei gloss {
+.formTei gloss {
   /* Empty Rule Set */
 }
-.contentTei glyph {
+.formTei glyph {
   /* Empty Rule Set */
 }
-.contentTei glyphName {
+.formTei glyphName {
   /* Empty Rule Set */
 }
-.contentTei gram {
+.formTei gram {
   /* Empty Rule Set */
 }
-.contentTei gramGrp {
+.formTei gramGrp {
   /* Empty Rule Set */
 }
-.contentTei graph {
+.formTei graph {
   /* Empty for now */
 }
-.contentTei graphic {
+.formTei graphic {
   display: none;
 }
-.contentTei group {
+.formTei group {
   /* Empty Rule Set */
 }
-.contentTei handDesc {
+.formTei handDesc {
   /* Empty Rule Set */
 }
-.contentTei handNote {
+.formTei handNote {
   /* Empty Rule Set */
 }
-.contentTei handNotes {
+.formTei handNotes {
   /* Empty Rule Set */
 }
-.contentTei handShift {
+.formTei handShift {
   /* Empty Rule Set */
 }
-.contentTei TEI head {
+.formTei TEI head {
   display: block;
   font-family: Arvo, sans-serif;
   font-weight: normal;
 }
-.contentTei body > head {
+.formTei body > head {
   font-size: 180%;
   text-indent: -0.5em;
 }
-.contentTei div > head {
+.formTei div > head {
   font-size: 170%;
   text-indent: -0.5em;
 }
-.contentTei div > div > head {
+.formTei div > div > head {
   font-size: 155%;
 }
-.contentTei div > div > div > head {
+.formTei div > div > div > head {
   font-size: 140%;
 }
-.contentTei div > div > div > div > head,
-.contentTei list > head {
+.formTei div > div > div > div > head,
+.formTei list > head {
   font-size: 130%;
 }
-.contentTei div > div > div > div > div > head {
+.formTei div > div > div > div > div > head {
   font-size: 120%;
 }
-.contentTei div > div > div > div > div > div head {
+.formTei div > div > div > div > div > div head {
   font-size: 110%;
 }
-.contentTei figure > head {
+.formTei figure > head {
   display: block;
   margin: 1.5em auto 1.5em auto;
   padding: .5em 1.5em 1.5em 1.5em;
@@ -736,325 +736,325 @@ border-top:2px solid @border-color;
   font-family: "Gentium Book Basic", Cochin, Georgia, Serif;
   font-size: 14pt;
 }
-.contentTei headItem {
+.formTei headItem {
   /* Empty Rule Set */
 }
-.contentTei headLabel {
+.formTei headLabel {
   /* Empty Rule Set */
 }
-.contentTei height {
+.formTei height {
   /* Empty Rule Set */
 }
-.contentTei heraldry {
+.formTei heraldry {
   /* Empty Rule Set */
 }
-.contentTei hi {
+.formTei hi {
   /* GLS: do we want to bold this or change the background color? */
 }
-.contentTei history {
+.formTei history {
   /* Empty Rule Set */
 }
-.contentTei hom {
+.formTei hom {
   /* Empty Rule Set */
 }
-.contentTei hyph {
+.formTei hyph {
   /* Empty Rule Set */
 }
-.contentTei hyphenation {
+.formTei hyphenation {
   /* Empty Rule Set */
 }
-.contentTei iNode {
+.formTei iNode {
   /* Empty Rule Set */
 }
-.contentTei iType {
+.formTei iType {
   /* Empty Rule Set */
 }
-.contentTei ident {
+.formTei ident {
   font-family: Courier,monospace;
 }
-.contentTei idno {
+.formTei idno {
   /* Empty Rule Set */
 }
-.contentTei if {
+.formTei if {
   /* Empty Rule Set */
 }
-.contentTei iff {
+.formTei iff {
   /* Empty Rule Set */
 }
-.contentTei imprimatur {
+.formTei imprimatur {
   /* Empty Rule Set */
 }
-.contentTei imprint {
+.formTei imprint {
   /* Empty Rule Set */
 }
-.contentTei incident {
+.formTei incident {
   /* Empty Rule Set */
 }
-.contentTei incipit {
+.formTei incipit {
   /* Empty Rule Set */
 }
-.contentTei index {
+.formTei index {
   /* Empty Rule Set */
 }
-.contentTei institution {
+.formTei institution {
   /* Empty Rule Set */
 }
-.contentTei interaction {
+.formTei interaction {
   /* Empty Rule Set */
 }
-.contentTei interpGrp {
+.formTei interpGrp {
   /* Empty Rule Set */
 }
-.contentTei interpretation {
+.formTei interpretation {
   /* Empty Rule Set */
 }
-.contentTei item {
+.formTei item {
   display: list-item;
   margin-left: 1em;
 }
-.contentTei cell item {
+.formTei cell item {
   margin-left: 1em;
 }
-.contentTei list[type="gloss"] > item {
+.formTei list[type="gloss"] > item {
   margin-left: 2em;
 }
-.contentTei join {
+.formTei join {
   /* Empty Rule Set */
 }
-.contentTei joinGrp {
+.formTei joinGrp {
   /* Empty Rule Set */
 }
-.contentTei keywords {
+.formTei keywords {
   /* Empty Rule Set */
 }
-.contentTei kinesic {
+.formTei kinesic {
   /* Empty Rule Set */
 }
-.contentTei l {
+.formTei l {
   display: block;
   padding-left: 2em;
   text-indent: -2em;
 }
-.contentTei list[type="gloss"] > label {
+.formTei list[type="gloss"] > label {
   display: block;
   margin-top: 0.25em;
   margin-bottom: 0.25em;
   font-weight: bold;
 }
-.contentTei lacunaEnd {
+.formTei lacunaEnd {
   /* Empty Rule Set */
 }
-.contentTei lacunaStart {
+.formTei lacunaStart {
   /* Empty Rule Set */
 }
-.contentTei lang {
+.formTei lang {
   /* Empty Rule Set */
 }
-.contentTei langKnowledge {
+.formTei langKnowledge {
   /* Empty Rule Set */
 }
-.contentTei langKnown {
+.formTei langKnown {
   /* Empty Rule Set */
 }
-.contentTei langUsage {
+.formTei langUsage {
   /* Empty Rule Set */
 }
-.contentTei language {
+.formTei language {
   /* Empty Rule Set */
 }
-.contentTei layout {
+.formTei layout {
   /* Empty Rule Set */
 }
-.contentTei layoutDesc {
+.formTei layoutDesc {
   /* Empty Rule Set */
 }
-.contentTei lb {
+.formTei lb {
   /* Empty Rule Set */
 }
-.contentTei lb:after {
+.formTei lb:after {
   content: '\a';
   white-space: pre;
 }
-.contentTei lbl {
+.formTei lbl {
   /* Empty Rule Set */
 }
-.contentTei leaf {
+.formTei leaf {
   /* Empty Rule Set */
 }
-.contentTei lem {
+.formTei lem {
   /* Empty Rule Set */
 }
-.contentTei lg {
+.formTei lg {
   display: block;
   margin-top: 1em;
   margin-bottom: 1em;
 }
-.contentTei link {
+.formTei link {
   /* Empty Rule Set */
 }
-.contentTei linkGrp {
+.formTei linkGrp {
   /* Empty Rule Set */
 }
-.contentTei list {
+.formTei list {
   display: block;
   margin-top: 1em;
   margin-bottom: 1em;
 }
-.contentTei item > list {
+.formTei item > list {
   margin-top: 0;
 }
-.contentTei text list[type=simple] {
+.formTei text list[type=simple] {
   list-style-type: none;
 }
-.contentTei text list[type=bulleted] {
+.formTei text list[type=bulleted] {
   list-style-type: disc;
 }
-.contentTei text list[type=ordered] {
+.formTei text list[type=ordered] {
   list-style-type: none;
   counter-reset: items 0;
 }
-.contentTei text list[type=ordered] > item {
+.formTei text list[type=ordered] > item {
   display: list-item;
   margin-left: 0;
   list-style-type: none;
   counter-increment: items;
 }
-.contentTei item > list[type=ordered] {
+.formTei item > list[type=ordered] {
   margin-left: 1em;
 }
-.contentTei text list[type=ordered] > item:before {
+.formTei text list[type=ordered] > item:before {
   content: counter(items, decimal) ". ";
 }
-.contentTei text list[type=gloss] {
+.formTei text list[type=gloss] {
   list-style-type: none;
 }
-.contentTei item > list[type=ordered] {
+.formTei item > list[type=ordered] {
   margin-left: 1em;
 }
-.contentTei localName {
+.formTei localName {
   /* Empty Rule Set */
 }
-.contentTei locale {
+.formTei locale {
   /* Empty Rule Set */
 }
-.contentTei location {
+.formTei location {
   /* Empty Rule Set */
 }
-.contentTei locus {
+.formTei locus {
   /* Empty Rule Set */
 }
-.contentTei locusGrp {
+.formTei locusGrp {
   /* Empty Rule Set */
 }
-.contentTei m {
+.formTei m {
   /* Empty Rule Set */
 }
-.contentTei macroRef {
+.formTei macroRef {
   /* Empty Rule Set NOT SURE WHAT EXACTLY*/
 }
-.contentTei macroSpec {
+.formTei macroSpec {
   /* dunno */
 }
-.contentTei mapping {
+.formTei mapping {
   /* not sure, maybe create rends for a few standard types, maybe hide */
 }
-.contentTei material {
+.formTei material {
   /* Empty Rule Set */
 }
-.contentTei measure {
+.formTei measure {
   /* Empty Rule Set */
 }
-.contentTei measureGrp {
+.formTei measureGrp {
   /* probably want to display attributes, at least units and type */
 }
-.contentTei meeting {
+.formTei meeting {
   /*Block */
 }
-.contentTei memberOf {
+.formTei memberOf {
   /* Empty Rule Set */
 }
-.contentTei mentioned {
+.formTei mentioned {
   /* think do nothing, not real clear on function, maybe hide? */
 }
-.contentTei metDecl {
+.formTei metDecl {
   /* Empty Rule Set */
 }
-.contentTei metSym {
+.formTei metSym {
   /* Empty Rule Set */
 }
-.contentTei milestone {
+.formTei milestone {
   display: block;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
-.contentTei milestone:before {
+.formTei milestone:before {
   content: "* * * * *";
 }
-.contentTei moduleRef {
+.formTei moduleRef {
   /* probably hide, not sure how we want to deal */
 }
-.contentTei moduleSpec {
+.formTei moduleSpec {
   /* probably hide, not sure how we want to deal */
 }
-.contentTei monogr {
+.formTei monogr {
   /* block with space above, below */
 }
-.contentTei mood {
+.formTei mood {
   /* Empty Rule Set */
 }
-.contentTei move {
+.formTei move {
   /* not sure, block, maybe just ital, maybe in parenths*/
 }
-.contentTei msContents .block-margins {
+.formTei msContents .block-margins {
   display: block;
   margin-top: 1em;
   margin-bottom: 1em;
 }
-.contentTei msDesc {
+.formTei msDesc {
   /* block with space above, below */
 }
-.contentTei msIdentifier {
+.formTei msIdentifier {
   /* block */
 }
-.contentTei msItem {
+.formTei msItem {
   /* block */
 }
-.contentTei msItemStruct {
+.formTei msItemStruct {
   /* block */
 }
-.contentTei msName {
+.formTei msName {
   /* Empty Rule Set */
 }
-.contentTei msPart {
+.formTei msPart {
   /* not sure, think block */
 }
-.contentTei musicNotation {
+.formTei musicNotation {
   font-weight: bold;
 }
-.contentTei musicNotation:before {
+.formTei musicNotation:before {
   font-weight: bold;
   content: "Musical Notation: ";
 }
-.contentTei name {
+.formTei name {
   /* Empty Rule Set */
 }
-.contentTei nameLink {
+.formTei nameLink {
   /* Empty Rule Set */
 }
-.contentTei namespace {
+.formTei namespace {
   /* not sure, hide? */
 }
-.contentTei nationality {
+.formTei nationality {
   /* Empty Rule Set */
 }
-.contentTei node {
+.formTei node {
   display: none;
 }
-.contentTei normalization {
+.formTei normalization {
   /* Empty Rule Set */
 }
-.contentTei note {
+.formTei note {
   display: block;
   margin: 1.5em auto 1.5em auto;
   padding: .5em 1.5em 1.5em 1.5em;
@@ -1072,87 +1072,87 @@ border-top:2px solid @border-color;
   -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
 }
-.contentTei notesStmt {
+.formTei notesStmt {
   /* do we want to box each individual <note> if they're in a <notesStmt>? */
   display: none;
 }
-.contentTei num {
+.formTei num {
   /* Empty Rule Set */
 }
-.contentTei number {
+.formTei number {
   /* Empty Rule Set */
 }
-.contentTei numeric {
+.formTei numeric {
   /* not sure, depends how we're dealing with <f>'s */
 }
-.contentTei nym {
+.formTei nym {
   /* not really sure here */
 }
-.contentTei oRef {
+.formTei oRef {
   /* not sure, think do nothing */
 }
-.contentTei oVar {
+.formTei oVar {
   font-style: italic;
 }
-.contentTei objectDesc {
+.formTei objectDesc {
   /* Empty Rule Set */
 }
-.contentTei objectType {
+.formTei objectType {
   /* Empty Rule Set */
 }
-.contentTei occupation {
+.formTei occupation {
   /* Empty Rule Set */
 }
-.contentTei offset {
+.formTei offset {
   /* Empty Rule Set */
 }
-.contentTei opener {
+.formTei opener {
   /* Empty Rule Set */
 }
-.contentTei org {
+.formTei org {
   /* Empty Rule Set */
 }
-.contentTei orgName {
+.formTei orgName {
   /* Empty Rule Set */
 }
-.contentTei origDate {
+.formTei origDate {
   /* Empty Rule Set */
 }
-.contentTei origPlace {
+.formTei origPlace {
   font-weight: bold;
 }
-.contentTei origPlace:before {
+.formTei origPlace:before {
   font-weight: bold;
   content: "Place of Origin: ";
 }
-.contentTei origin {
+.formTei origin {
   /* Empty Rule Set */
 }
-.contentTei p {
+.formTei p {
   display: block;
   margin-top: 1em;
   margin-bottom: 1em;
   text-align: justify;
 }
-.contentTei *[rendition~="#center"] p {
+.formTei *[rendition~="#center"] p {
   text-align: center;
 }
-.contentTei availability > p:first-child {
+.formTei availability > p:first-child {
   margin-top: 0em;
 }
-.contentTei pRef {
+.formTei pRef {
   /* rend attribute target */
 }
-.contentTei pVar {
+.formTei pVar {
   /* rend attribute target */
 }
-.contentTei particDesc {
+.formTei particDesc {
   /* Empty Rule Set */
 }
-.contentTei pause {
+.formTei pause {
   /* Empty Rule Set*/
 }
-.contentTei pb {
+.formTei pb {
   display: block;
   width: 100%;
   text-align: right;
@@ -1160,7 +1160,7 @@ border-top:2px solid @border-color;
   margin: 2em 0 2em 0;
   font-size: 11pt;
 }
-.contentTei .pb {
+.formTei .pb {
   display: block;
   width: 100%;
   text-align: right;
@@ -1168,492 +1168,492 @@ border-top:2px solid @border-color;
   margin: 2em 0 2em 0;
   font-size: 11pt;
 }
-.contentTei pb:before {
+.formTei pb:before {
   content: "page:\a0" attr(n);
 }
-.contentTei pc {
+.formTei pc {
   /* Empty Rule Set */
 }
-.contentTei per {
+.formTei per {
   /* don't know, check back */
 }
-.contentTei performance {
+.formTei performance {
   display: block;
   margin-top: 1em;
   margin-bottom: 1em;
 }
-.contentTei persName {
+.formTei persName {
   /* Empty Rule Set */
 }
-.contentTei person {
+.formTei person {
   display: block;
   margin-top: 1em;
   margin-bottom: 1em;
 }
-.contentTei personGrp {
+.formTei personGrp {
   display: block;
   margin-top: 1em;
   margin-bottom: 1em;
 }
-.contentTei phr {
+.formTei phr {
   /* Empty Rule Set */
 }
-.contentTei physDesc {
+.formTei physDesc {
   /* Empty Rule Set */
 }
-.contentTei place {
+.formTei place {
   /* Empty Rule Set */
 }
-.contentTei placeName {
+.formTei placeName {
   /* Empty Rule Set */
 }
-.contentTei population {
+.formTei population {
   /* dunno with this one */
 }
-.contentTei pos {
+.formTei pos {
   /* Empty Rule Set */
 }
-.contentTei postBox {
+.formTei postBox {
   /* Empty Rule Set */
 }
-.contentTei postCode {
+.formTei postCode {
   /* Empty Rule Set */
 }
-.contentTei postscript {
+.formTei postscript {
   display: block;
   margin-top: 2em;
 }
-.contentTei precision {
+.formTei precision {
   /* Empty Rule Set */
 }
-.contentTei preparedness {
+.formTei preparedness {
   /* Empty Rule Set */
 }
-.contentTei principal {
+.formTei principal {
   font-weight: bold;
 }
-.contentTei principal:before {
+.formTei principal:before {
   font-weight: bold;
   content: "Principal: ";
 }
-.contentTei profileDesc {
+.formTei profileDesc {
   display: none;
 }
-.contentTei projectDesc {
+.formTei projectDesc {
   /* Empty Rule Set */
 }
-.contentTei prologue {
+.formTei prologue {
   /* Empty Rule Set */
 }
-.contentTei pron {
+.formTei pron {
   /* Empty Rule Set */
 }
-.contentTei provenance {
+.formTei provenance {
   display: block;
   margin-top: 0;
   margin-bottom: 0;
 }
-.contentTei ptr {
+.formTei ptr {
   /* dunno */
 }
-.contentTei pubPlace {
+.formTei pubPlace {
   /* Empty Rule Set */
 }
-.contentTei publicationStmt > * {
+.formTei publicationStmt > * {
   display: none;
 }
-.contentTei publicationStmt {
+.formTei publicationStmt {
   display: block;
   margin-top: 1em;
   margin-bottom: 1em;
 }
-.contentTei publicationStmt > date {
+.formTei publicationStmt > date {
   display: none;
 }
-.contentTei publicationStmt > publisher {
+.formTei publicationStmt > publisher {
   display: none;
 }
-.contentTei purpose {
+.formTei purpose {
   /* Empty Rule Set */
 }
-.contentTei q {
+.formTei q {
   quotes: "\201c" "\201d" "\2018" "\2019" "\201c" "\201d" "\2018" "\2019" "\201c" "\201d" "\2018" "\2019" "\201c" "\201d";
 }
-.contentTei q:before {
+.formTei q:before {
   content: open-quote;
 }
-.contentTei q:after {
+.formTei q:after {
   content: close-quote;
 }
-.contentTei q[next]:after {
+.formTei q[next]:after {
   content: "" !important;
 }
-.contentTei q[prev]:before {
+.formTei q[prev]:before {
   content: "" !important;
 }
-.contentTei quotation {
+.formTei quotation {
   /* Empty Rule Set */
 }
-.contentTei quote {
+.formTei quote {
   quotes: "\201c" "\201d" "\2018" "\2019" "\201c" "\201d" "\2018" "\2019" "\201c" "\201d" "\2018" "\2019" "\201c" "\201d";
 }
-.contentTei quote:before {
+.formTei quote:before {
   content: open-quote;
 }
-.contentTei quote:after {
+.formTei quote:after {
   content: close-quote;
 }
-.contentTei quote[next]:after {
+.formTei quote[next]:after {
   content: "" !important;
 }
-.contentTei quote[prev]:before {
+.formTei quote[prev]:before {
   content: "" !important;
 }
-.contentTei rdg {
+.formTei rdg {
   /*perhaps choice */
 }
-.contentTei rdgGrp {
+.formTei rdgGrp {
   /* Empty Rule Set */
 }
-.contentTei re {
+.formTei re {
   display: block;
   margin-top: 0;
   margin-bottom: 0;
 }
-.contentTei recordHist {
+.formTei recordHist {
   display: block;
   margin-top: 1em;
   margin-bottom: 1em;
 }
-.contentTei recording {
+.formTei recording {
   /* not sure here, only in header? */
 }
-.contentTei recordingStmt {
+.formTei recordingStmt {
   /* Empty Rule Set */
 }
-.contentTei ref {
+.formTei ref {
   /*include link if target */
 }
-.contentTei region {
+.formTei region {
   /* Empty Rule Set */
 }
-.contentTei relatedItem {
+.formTei relatedItem {
   /* Empty Rule Set */
 }
-.contentTei relation {
+.formTei relation {
   /* Don't Know*/
 }
-.contentTei relationGrp {
+.formTei relationGrp {
   /* Empty Rule Set */
 }
-.contentTei remarks {
+.formTei remarks {
   font-weight: bold;
 }
-.contentTei remarks:before {
+.formTei remarks:before {
   font-weight: bold;
   content: "remarks: ";
 }
-.contentTei rendition {
+.formTei rendition {
   /*Don't remember what we decided to do with this*/
 }
-.contentTei repository {
+.formTei repository {
   /* Empty Rule Set */
 }
-.contentTei residence {
+.formTei residence {
   /* Empty Rule Set */
 }
-.contentTei resp {
+.formTei resp {
   /* Empty Rule Set */
 }
-.contentTei respStmt {
+.formTei respStmt {
   display: block;
   margin-top: 0;
   margin-bottom: 0;
 }
-.contentTei restore {
+.formTei restore {
   /* footnote or sidenote perhaps*/
 }
-.contentTei revisionDesc {
+.formTei revisionDesc {
   display: none;
 }
-.contentTei rhyme {
+.formTei rhyme {
   /* Empty Rule Set */
 }
-.contentTei role {
+.formTei role {
   /* put on same line as roledesc? */
 }
-.contentTei roleDesc {
+.formTei roleDesc {
   /* put on same line as role */
 }
-.contentTei roleName {
+.formTei roleName {
   /* Empty Rule Set */
 }
-.contentTei root {
+.formTei root {
   /* don't know */
 }
-.contentTei row {
+.formTei row {
   display: table-row;
 }
-.contentTei rs {
+.formTei rs {
   /* Empty Rule Set */
 }
-.contentTei s {
+.formTei s {
   text-decoration: none;
 }
-.contentTei said {
+.formTei said {
   /* Empty Rule Set */
 }
-.contentTei salute {
+.formTei salute {
   display: block;
   margin-top: 1em;
   margin-bottom: 1em;
 }
-.contentTei samplingDecl {
+.formTei samplingDecl {
   display: block;
   margin-top: 0;
   margin-bottom: 0;
 }
-.contentTei schemaSpec {
+.formTei schemaSpec {
   /*NOT SURE, talk over with group */
 }
-.contentTei scriptDesc {
+.formTei scriptDesc {
   /*NOT SURE, talk over with group */
 }
-.contentTei scriptNote {
+.formTei scriptNote {
   display: block;
   margin-top: 1em;
   margin-bottom: 1em;
 }
-.contentTei scriptStmt {
+.formTei scriptStmt {
   /* not sure */
 }
-.contentTei seal {
+.formTei seal {
   display: block;
   margin-top: 0;
   margin-bottom: 0;
 }
-.contentTei seal:before {
+.formTei seal:before {
   font-weight: bold;
   content: "Seal: ";
 }
-.contentTei sealDesc {
+.formTei sealDesc {
   display: block;
   margin-top: 1em;
   margin-bottom: 1em;
 }
-.contentTei secFol:before {
+.formTei secFol:before {
   font-weight: bold;
   content: "Second Folio: ";
 }
-.contentTei seg {
+.formTei seg {
   /* Empty Set Rule */
 }
-.contentTei segmentation {
+.formTei segmentation {
   /* Empty Rule Set */
 }
-.contentTei sense {
+.formTei sense {
   display: block;
   margin-top: 0;
   margin-bottom: 0;
 }
-.contentTei series {
+.formTei series {
   /* treat same as seriesstmt? */
 }
-.contentTei seriesStmt {
+.formTei seriesStmt {
   display: none;
 }
-.contentTei set {
+.formTei set {
   /* Empty Set Rule */
 }
-.contentTei setting {
+.formTei setting {
   display: block;
   margin-top: 0;
   margin-bottom: 0;
 }
-.contentTei settingDesc {
+.formTei settingDesc {
   /* Empty Set Rule */
 }
-.contentTei settlement {
+.formTei settlement {
   /* Empty Set Rule */
 }
-.contentTei sex {
+.formTei sex {
   /* Empty Rule Set */
 }
-.contentTei shift {
+.formTei shift {
   /* seems a bit to complex to do anything with */
 }
-.contentTei sic {
+.formTei sic {
   /* rend as choice when contained within a choice tag, perhaps as label with parenthesis after when alone */
 }
-.contentTei signatures {
+.formTei signatures {
   /* DON't KNOW, look again later */
 }
-.contentTei signed {
+.formTei signed {
   display: block;
   margin-top: 2em;
   /*should make name a block when contained within  */
 }
-.contentTei soCalled {
+.formTei soCalled {
   quotes: "\201c" "\201d" "\2018" "\2019" "\201c" "\201d" "\2018" "\2019" "\201c" "\201d" "\2018" "\2019" "\201c" "\201d";
 }
-.contentTei soCalled:before {
+.formTei soCalled:before {
   content: open-quote;
 }
-.contentTei soCalled:after {
+.formTei soCalled:after {
   content: close-quote;
 }
-.contentTei soCalled[next]:after {
+.formTei soCalled[next]:after {
   content: "" !important;
 }
-.contentTei soCalled[prev]:before {
+.formTei soCalled[prev]:before {
   content: "" !important;
 }
-.contentTei socecStatus {
+.formTei socecStatus {
   /* Empty Set Rule */
 }
-.contentTei sound {
+.formTei sound {
   font-style: italic;
 }
-.contentTei source {
+.formTei source {
   display: block;
   margin-top: 0;
   margin-bottom: 0;
 }
-.contentTei sourceDesc {
+.formTei sourceDesc {
   display: none;
 }
-.contentTei sp {
+.formTei sp {
   /*empty rule set*/
 }
-.contentTei space:before {
+.formTei space:before {
   font-weight: bold;
   content: "";
 }
-.contentTei TEI span {
+.formTei TEI span {
   /* jawalsh: why were we hiding this? */
   /* .hide; */
 }
-.contentTei TEI egXML span {
+.formTei TEI egXML span {
   display: inline;
 }
-.contentTei spanGrp {
+.formTei spanGrp {
   /* NOT SURE, look back on */
 }
-.contentTei speaker {
+.formTei speaker {
   font-weight: bold;
   margin-right: 0;
 }
-.contentTei specDesc {
+.formTei specDesc {
   /* NOT SURE, look back on */
 }
-.contentTei specGrp {
+.formTei specGrp {
   /* NOT SURE, look back on */
 }
-.contentTei specGrpRef {
+.formTei specGrpRef {
   /* NOT SURE, look back on */
 }
-.contentTei specList {
+.formTei specList {
   /* Empty Set Rule */
 }
-.contentTei sponsor {
+.formTei sponsor {
   display: block;
   margin-top: 0;
   margin-bottom: 0;
   /* Block element, maybe labeled  */
 }
-.contentTei sponsor:before {
+.formTei sponsor:before {
   font-weight: bold;
   content: "Sponsor:";
 }
-.contentTei stage {
+.formTei stage {
   display: block;
   margin-top: 1em;
   margin-bottom: 1em;
   font-style: italic;
 }
-.contentTei stamp {
+.formTei stamp {
   display: block;
   margin-top: 1em;
   margin-bottom: 1em;
 }
-.contentTei stamp:before {
+.formTei stamp:before {
   font-weight: bold;
   content: "Stamped: ";
 }
-.contentTei state {
+.formTei state {
   /* Empty Set Rule */
 }
-.contentTei stdVals {
+.formTei stdVals {
   /* Empty Set Rule */
 }
-.contentTei street {
+.formTei street {
   /* Empty Set Rule */
 }
-.contentTei stress {
+.formTei stress {
   /* Empty Set Rule */
 }
-.contentTei string {
+.formTei string {
   /* Empty Set Rule */
 }
-.contentTei stringVal {
+.formTei stringVal {
   /* doesn't seem to be part of tei 5 */
 }
-.contentTei subc {
+.formTei subc {
   /* Empty Set Rule */
 }
-.contentTei subst {
+.formTei subst {
   /* Empty Set Rule */
 }
-.contentTei summary {
+.formTei summary {
   /* Empty Set Rule */
 }
-.contentTei superEntry {
+.formTei superEntry {
   /* Block with space above and below, maybe have no block and space for <entry> when contained by this element */
 }
-.contentTei supplied {
+.formTei supplied {
   /* not sure on this one, seems like we should indicate somehow. Is there a standard way to do this? */
 }
-.contentTei support {
+.formTei support {
   /* Empty Set Rule */
 }
-.contentTei supportDesc {
+.formTei supportDesc {
   /* do nothing with or maybe block */
 }
-.contentTei surface {
+.formTei surface {
   /* choice */
 }
-.contentTei surname {
+.formTei surname {
   /* Empty Set Rule */
 }
-.contentTei surplus {
+.formTei surplus {
   display: none;
 }
-.contentTei surrogates {
+.formTei surrogates {
   /*Empty Rule Set */
 }
-.contentTei syll {
+.formTei syll {
   /* Empty Set Rule */
 }
-.contentTei symbol {
+.formTei symbol {
   /* Empty Set Rule */
 }
-.contentTei TEI {
+.formTei TEI {
   display: block;
 }
-.contentTei table {
+.formTei table {
   border-collapse: separate;
   border-spacing: 2px;
 }
-.contentTei TEI table {
+.formTei TEI table {
   display: block;
   margin-top: 2em;
   margin-bottom: 2em;
   font-size: 12pt;
 }
-.contentTei table > head {
+.formTei table > head {
   text-align: center;
 }
-.contentTei teiHeader {
+.formTei teiHeader {
   display: block;
   /*
 border-radius: 15px;
@@ -1664,7 +1664,7 @@ background:white;
   margin-bottom: 2em;
   border-bottom: 1px solid #999;
 }
-.contentTei TEI > text {
+.formTei TEI > text {
   display: block;
   /*
 border-radius: 15px;
@@ -1673,157 +1673,157 @@ background:white;
 */
   line-height: 1.5;
 }
-.contentTei textClass {
+.formTei textClass {
   display: none;
 }
-.contentTei textDesc {
+.formTei textDesc {
   display: none;
 }
-.contentTei TEI title {
+.formTei TEI title {
   display: inline;
 }
-.contentTei TEI title[level=a] {
+.formTei TEI title[level=a] {
   quotes: "\201c" "\201d" "\2018" "\2019" "\201c" "\201d" "\2018" "\2019" "\201c" "\201d" "\2018" "\2019" "\201c" "\201d";
 }
-.contentTei TEI title[level=a]:before {
+.formTei TEI title[level=a]:before {
   content: open-quote;
 }
-.contentTei TEI title[level=a]:after {
+.formTei TEI title[level=a]:after {
   content: close-quote;
 }
-.contentTei TEI title[level=a][next]:after {
+.formTei TEI title[level=a][next]:after {
   content: "" !important;
 }
-.contentTei TEI title[level=a][prev]:before {
+.formTei TEI title[level=a][prev]:before {
   content: "" !important;
 }
-.contentTei title[level=m] {
+.formTei title[level=m] {
   font-style: italic;
 }
-.contentTei titleStmt > tei-title {
+.formTei titleStmt > tei-title {
   display: block;
   font-family: Arvo, sans-serif;
   font-weight: normal;
   font-weight: bold !important;
   font-size: 150%;
 }
-.contentTei titleStmt > editor:before {
+.formTei titleStmt > editor:before {
   content: "Edited by ";
 }
-.contentTei typeDesc {
+.formTei typeDesc {
   display: none;
 }
-.contentTei u:before {
+.formTei u:before {
   content: "-";
 }
-.contentTei unicodeName {
+.formTei unicodeName {
   /* Empty Rule Set */
 }
-.contentTei usg {
+.formTei usg {
   /* Empty Rule Set */
 }
-.contentTei vAlt {
+.formTei vAlt {
   /* Empty Rule Set */
 }
-.contentTei vColl {
+.formTei vColl {
   /* Empty Rule Set */
 }
-.contentTei vDefault {
+.formTei vDefault {
   /* Empty Rule Set */
 }
-.contentTei vLabel {
+.formTei vLabel {
   /* Empty Rule Set */
 }
-.contentTei vMerge {
+.formTei vMerge {
   /* Empty Rule Set */
 }
-.contentTei vNot {
+.formTei vNot {
   /* Empty Rule Set */
 }
-.contentTei vRange {
+.formTei vRange {
   /* Empty Rule Set */
 }
-.contentTei val {
+.formTei val {
   /* Empty Rule Set */
 }
-.contentTei valDesc {
+.formTei valDesc {
   /* Empty Rule Set */
 }
-.contentTei valItem {
+.formTei valItem {
   /* Empty Rule Set */
 }
-.contentTei valList {
+.formTei valList {
   /* Empty Rule Set */
 }
-.contentTei value {
+.formTei value {
   /* Empty Rule Set */
 }
-.contentTei variantEncoding {
+.formTei variantEncoding {
   /* Empty Rule Set */
 }
-.contentTei view {
+.formTei view {
   font-style: italic;
 }
-.contentTei vocal {
+.formTei vocal {
   /* Empty Rule Set */
 }
-.contentTei w {
+.formTei w {
   /* Empty Rule Set */
 }
-.contentTei watermark {
+.formTei watermark {
   /* Empty Rule Set */
 }
-.contentTei width {
+.formTei width {
   /* Empty Rule Set */
 }
-.contentTei wit {
+.formTei wit {
   /* Empty Rule Set */
 }
-.contentTei witDetail {
+.formTei witDetail {
   /* Empty Rule Set */
 }
-.contentTei witEnd {
+.formTei witEnd {
   /* Empty Rule Set */
 }
-.contentTei witStart {
+.formTei witStart {
   /* Empty Rule Set */
 }
-.contentTei witness {
+.formTei witness {
   /* Empty Rule Set */
 }
-.contentTei writing {
+.formTei writing {
   /* Empty Rule Set */
 }
-.contentTei xr {
+.formTei xr {
   /* Empty Rule Set */
 }
-.contentTei zone {
+.formTei zone {
   /* Empty Rule Set */
 }
-.contentTei html > body {
+.formTei html > body {
   margin: 0;
   padding: 0;
 }
-.contentTei img {
+.formTei img {
   border: 1px solid #aaaaaa;
 }
-.contentTei footer {
+.formTei footer {
   margin-top: 1em;
   border-top: 1px solid #292929;
   padding-top: .5em;
   font-size: 12pt;
 }
-.contentTei a:link,
-.contentTei a:visited,
-.contentTei a:active {
+.formTei a:link,
+.formTei a:visited,
+.formTei a:active {
   color: #5f0000;
   text-decoration: none;
 }
-.contentTei a:hover {
+.formTei a:hover {
   color: #5f0000;
   text-decoration: underline;
 }
-.contentTei #teibpToolbox {
+.formTei #teibpToolbox {
   left: 56em;
   top: 25px;
   position: fixed;
@@ -1840,31 +1840,31 @@ background:white;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
   width: 12em;
 }
-.contentTei #teibpToolbox h1 {
+.formTei #teibpToolbox h1 {
   font-weight: bold;
   font-size: 115%;
   margin-top: 0;
   margin-bottom: .5em;
   border-bottom: 1px solid #aaaaaa;
 }
-.contentTei .eg-element {
+.formTei .eg-element {
   color: #0165c8;
 }
-.contentTei .eg-comment {
+.formTei .eg-comment {
   color: gray;
 }
-.contentTei .eg-att,
-.contentTei .eg-nsdecl {
+.formTei .eg-att,
+.formTei .eg-nsdecl {
   color: #f58650;
 }
-.contentTei .eg-attvalue,
-.contentTei .eg-ns {
+.formTei .eg-attvalue,
+.formTei .eg-ns {
   color: #993300;
 }
-.contentTei .eg-text {
+.formTei .eg-text {
   color: #292929;
 }
-.contentTei #loading {
+.formTei #loading {
   display: none;
   position: fixed;
   left: 0;
@@ -1873,27 +1873,27 @@ background:white;
   height: 100%;
   background-image: url("../images/transparentbg.png");
 }
-.contentTei #resizable {
-  background-color: red;
+.formTei #resizable {
+  background-color: blue;
   width: 550px;
   height: 700px;
   overflow: hidden;
   padding: 0 1em .25em 0;
 }
-.contentTei div.facsImage {
+.formTei div.facsImage {
   width: 100%;
   height: 98%;
   overflow-y: scroll;
   border: 1px solid black;
 }
-.contentTei div.facsImage img {
+.formTei div.facsImage img {
   max-width: 98% !important;
   margin-top: .5em;
 }
-.contentTei div.facsImage img:first-child {
+.formTei div.facsImage img:first-child {
   margin-top: 0;
 }
-.contentTei .head-font {
+.formTei .head-font {
   font-family: Arvo, sans-serif;
   font-weight: normal;
 }
