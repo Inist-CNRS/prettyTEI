@@ -4,14 +4,15 @@
         <title>Pretty TEI demo</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="dist/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+        <link rel="stylesheet" href="vendor/css/bootstrap-theme.min.css">
 
         <!-- html Style -->
         <link rel="stylesheet" href="dist/css/style.css">
 
         <!-- TEI LESS generated Style -->
-        <link rel="stylesheet" href="css/tei.css">
+        <link rel="stylesheet" href="dist/css/contentTei.css">
+        <link rel="stylesheet" href="dist/css/formTei.css">
     </head>
     <body>
         <div class="container">
@@ -27,8 +28,9 @@
                 </section>
             </div>
         </div>
-        <script src="dist/js/jquery-11.1.2.js"></script>
-        <script src="dist/js/bootstrap.min.js"></script>
+  
+        <script src="vendor/js/jquery-11.1.2.js"></script>
+        <script src="vendor/js/bootstrap.min.js"></script>
         <script>
 
 
@@ -41,6 +43,11 @@
                 listDiv = $("#listDiv"),
                 nbOfFiles = 0;
 
+            /*
+            * readFile()
+            * @param file is a single file got by HTML5 file api
+            * @param nbOfFiles is an increment INT , to count all files sent to drag & dropp
+            */
             function readFile(file,nbOfFiles) {
                     // Loop through files with a closure so every FileReader are isolated.
                     var reader = new FileReader();
@@ -58,7 +65,7 @@
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>\
                                     <h4 class="modal-title" id="myModalLabel">'+ name +'</h4>\
                                   </div>\
-                                  <div class="modal-body tei">\
+                                  <div class="modal-body contentTei">\
                                     '+ text +'\
                                   </div>\
                                   <div class="modal-footer">\
@@ -69,7 +76,7 @@
                             </div>';
 
                             // Add img & figcaption (file name) to figure
-                            figure.append('<img src="dist/img/xml.jpg" class="pictures" alt="xml picture" data-toggle="modal" data-target="#fileContent'+ nbOfFiles +'">','<figcaption>'+ name +'</figcaption>');
+                            figure.append('<img src="vendor/img/xml.jpg" class="pictures" alt="xml picture" data-toggle="modal" data-target="#fileContent'+ nbOfFiles +'">','<figcaption>'+ name +'</figcaption>');
 
                             // Add all created elements to html
                             listDiv.append(figure);
@@ -109,7 +116,6 @@
                 }
             }
         });
-        //$(".js-tei").append("<div class='tei'></div>").children("div.tei").load("tei/test.xml");
         </script>
     </body>
 </html>
