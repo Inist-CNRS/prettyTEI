@@ -10,17 +10,21 @@
 	@import "baseVariables.less";
 
 	// Define custom variables & Styles
-	@background-color:#8A8084;
-	@color:#fff;
+	@background-color:#FEFEFE;
+	@color:#2A3744;
 	@body-font-size: 15px;
-	@body-font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	@body-font-family: "Helvetica Neue" ,"Open Sans ",Helvetica,Arial,sans-serif;
 	@display : none;
-	@idefixBg : #CC6A63;
+	@primaryColor : #B1A0A0;
+	@secondColor : #FEFEFE;
 
 
 	//Surcharge
+	p{
+		text-align: left;
+	}
 
-	respstmt , ns\:stdf , titlestmt author , text titlepage , text div[type="keyword"] , p[rend="figure-title"] , figure{
+	respstmt , ns\:stdf , titlestmt author , text titlepage , text div[type="keyword"] , p[rend="figure-title"] , figure , titlestmt title[xml\:lang="en"] , div[type="abstract"][xml\:lang="en"]{
 		display: @display;
 	}
 
@@ -35,20 +39,19 @@
 		margin-bottom: 45px 
 	}
 
-	titlestmt title[xml\:lang="en"] , div[type="abstract"][xml\:lang="en"]{
-		font-size: 11px;
-		font-style: italic;
-		font-weight: normal;
-
-	}
-
 	teiHeader{
 		border-bottom: 1px solid transparent;
 	}
 
 	note{
-		width: 600px;
-		background: @idefixBg
+		display: @display;
+		width: 100%;
+		padding: 15px;
+		background: @primaryColor;
+		color: #FEFEFE;
+		border-radius: 0;
+		box-shadow: none;
+		border: none;
 	}
 
 	div[type="div1"] > w{
@@ -61,6 +64,13 @@
 		font-weight: bold;
 	}
 
+	div[type="abstract"]{
+		width: 100%;
+		background: @primaryColor;
+		padding: 15px;
+		color: @secondColor;
+	}
+
 	text p > p:first-child{
 		margin-top: 95px;
 	}
@@ -69,6 +79,7 @@
 		float: left;
 		width: 100%;
 		margin-left: 32px;
+		margin-bottom: 5px;
 		padding-left: 8px;
 		font-style: normal;
 		font-size: 16px;
