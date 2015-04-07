@@ -51,7 +51,7 @@ $( document ).ready(function() {
 
                   // Add all created elements to html
                   listDiv.append(figure);
-                  listDiv.append(div)
+                  listDiv.append(div);
 
               }
               reader.readAsText(file, "UTF-8");

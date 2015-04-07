@@ -26,8 +26,8 @@ h1{
   display: flex;
   justify-content:center;
   align-items: center;
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: 150px;
   margin: 0 auto;
   border: 10px dashed;
   border-radius: 10px;
