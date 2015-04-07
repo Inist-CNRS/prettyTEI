@@ -11,5 +11,69 @@
 
 	// Define custom variables & Styles
 	@background-color:#8A8084;
+	@color:#fff;
+	@body-font-size: 15px;
+	@body-font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	@display : none;
+	@idefixBg : #CC6A63;
 
+
+	//Surcharge
+
+	respstmt , ns\:stdf , titlestmt author , text titlepage , text div[type="keyword"] , p[rend="figure-title"] , figure{
+		display: @display;
+	}
+
+	titlestmt title{
+		width: 100%;
+		font-size: 19px;
+		float: left;
+		font-weight: bold;
+	}
+
+	title:last-child{
+		margin-bottom: 45px 
+	}
+
+	titlestmt title[xml\:lang="en"] , div[type="abstract"][xml\:lang="en"]{
+		font-size: 11px;
+		font-style: italic;
+		font-weight: normal;
+
+	}
+
+	teiHeader{
+		border-bottom: 1px solid transparent;
+	}
+
+	note{
+		width: 600px;
+		background: @idefixBg
+	}
+
+	div[type="div1"] > w{
+		font-size: 19px;
+		font-weight: bold;
+	}
+
+	div[type="div2"] > w{
+		font-size: 16px;
+		font-weight: bold;
+	}
+
+	text p > p:first-child{
+		margin-top: 95px;
+	}
+
+	q[rend="quotation"]{
+		float: left;
+		width: 100%;
+		margin-left: 32px;
+		padding-left: 8px;
+		font-style: normal;
+		font-size: 16px;
+		font-family: Consolas, "Times New Roman", Verdana;
+		border-left: 4px solid #CCC;
+
+	}
 }
