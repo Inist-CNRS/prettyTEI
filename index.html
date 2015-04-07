@@ -1,53 +1,64 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Pretty TEI demo</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
-        <link rel="stylesheet" href="vendor/css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="vendor/css/bootstrap-switch.min.css">
+<html lang="fr">
+  <head>
+    <title>Pretty TEI demo</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="vendor/css/bootstrap-switch.min.css">
 
-        <!-- html Style -->
-        <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="dist/css/style.css">
 
-        <!-- TEI LESS generated Style -->
-        <link rel="stylesheet" href="dist/css/contentTei.min.css">
-        <link rel="stylesheet" href="dist/css/formTei.min.css">
-    </head>
-    <body>
+    <link rel="stylesheet" href="dist/css/contentTei.min.css">
+    <link rel="stylesheet" href="dist/css/formTei.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <!--[if lt IE 8]>
+        <p class="alert alert-danger text-center">Vous utilisez un navigateur <strong>dépassé</strong>. Veuillez <a href="http://browsehappy.com/">télécharger un navigateur plus récent</a> pour améliorer votre expérience.</p>
+      <![endif]-->
 
-
-        <!-- Fixed navbar -->
+      <header id="header">
         <nav class="navbar navbar-inverse navbar-top">
           <div class="container">
             <div class="navbar-header prettyTitle">
               <a class="navbar-brand" href="#">PrettyTEI</a>
             </div>
+          </div>
         </nav>
+      </header>
 
-        <div class="container">
-            <div class="row">
-                <h1>Drag & Drop your TEI files to watch them with prettyTEI:</h1>
-            </div>
-            <div class="row">
-                <div class="col-sm-2"></div>
+      <section id="content">
+        <h1>Drag & Drop your TEI files to watch them with prettyTEI:</h1>
 
-                <section id="uploadDiv" class="col-sm-8">
-                    <div class="jumbotron">
-                        <input id="switch-offColor" data-off-color="warning" data-on-text="Contenu" data-off-text="Forme" type="checkbox">
-                    </div>
-                    <div id="dropArea" draggable='true'>Drag & drop files here</div>
-                </section>
+        <div class="row">
 
-                <section id="listDiv" class="col-sm-12">
-                </section>
-            </div>
+          <div class="col-xs-offset-2 col-xs-8">
+            <section id="uploadDiv">
+              <div class="jumbotron">
+                <input id="switch-offColor" data-off-color="warning" data-on-text="Contenu" data-off-text="Forme" type="checkbox">
+              </div>
+              <div id="dropArea" draggable='true'>Drag & drop files here</div>
+            </section>
+          </div>
+
+          <div class="col-xs-12">
+            <section id="TEIFilesPlaceholder">
+              <div class="row">
+
+              </div>
+            </section>
+          </div>
+
         </div>
-  
-        <script src="vendor/js/jquery-11.1.2.js"></script>
-        <script src="vendor/js/bootstrap.min.js"></script>
-        <script src="vendor/js/bootstrap-switch.min.js"></script>
-        <script src="dist/js/main.js"></script>
-    </body>
+      </section>
+    </div> <!-- container-->
+
+    <script src="vendor/js/jquery-1.11.2.min.js"></script>
+    <script src="vendor/js/bootstrap.min.js"></script>
+    <script src="vendor/js/bootstrap-switch.min.js"></script>
+    <script src="dist/js/main.js"></script>
+  </body>
 </html>
