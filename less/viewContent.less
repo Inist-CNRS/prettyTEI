@@ -17,6 +17,7 @@
 	@display : none;
 	@primaryColor : #B1A0A0;
 	@secondColor : #FEFEFE;
+	@coloredColor : #CC6A63;
 
 
 	//Surcharge
@@ -24,14 +25,14 @@
 		text-align: left;
 	}
 
-	respstmt , ns\:stdf , titlestmt author , text titlepage , text div[type="keyword"] , p[rend="figure-title"] , figure , titlestmt title[xml\:lang="en"] , div[type="abstract"][xml\:lang="en"]{
+	back ,respstmt , ns\:stdf , titlestmt author , text titlepage , text div[type="keyword"] , p[rend="figure-title"] , figure , titlestmt title[xml\:lang="en"] , div[type="abstract"][xml\:lang="en"]{
 		display: @display;
 	}
 
 	titlestmt title{
 		width: 100%;
 		font-size: 19px;
-		float: left;
+		//float: left;
 		font-weight: bold;
 	}
 
@@ -54,15 +55,45 @@
 		border: none;
 	}
 
-	div[type="div1"] > w{
+	div[type="div1"] > w , div[subtype="level1"]{
+		padding: 12px;
 		font-size: 19px;
 		font-weight: bold;
+		color: @coloredColor;
 	}
 
-	div[type="div2"] > w{
+	div[type="div1"] > p ,div[type="div1"] > list{
+		font-size: 14px;
+		font-weight: normal;
+		color: @color;
+	}
+
+	div[type="div2"] > w , div[subtype="level2"]{
+		padding: 12px;
+		font-size: 17px;
+		font-weight: bold;
+		color: @coloredColor;
+	}
+
+	div[type="div2"] > p , div[type="div2"] > list{
+		font-size: 14px;
+		font-weight: normal;
+		color: @color;
+	}
+
+	div[type="div3"] > w , div[subtype="level3"]{
+		padding: 12px;
 		font-size: 16px;
 		font-weight: bold;
+		color: @coloredColor;
 	}
+
+	div[type="div3"] > p, div[type="div3"] > list{
+		font-size: 14px;
+		font-weight: normal;
+		color: @color;
+	}
+
 
 	div[type="abstract"]{
 		width: 100%;
@@ -84,7 +115,11 @@
 		font-style: normal;
 		font-size: 16px;
 		font-family: Consolas, "Times New Roman", Verdana;
+		font-style: italic;
+		font-weight: normal;
 		border-left: 4px solid #CCC;
+		color: @color;
 
 	}
+
 }

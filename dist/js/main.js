@@ -23,8 +23,18 @@ $(function () {
     var reader = new FileReader();
     reader.onload = function (event) {
       // get file content , name
+
+      var contenuReplaced;
+
       var name = file.name;
       var text = event.target.result;
+
+      contenuReplaced = text.replace(/<head/g , "<div");
+      contenuReplaced = contenuReplaced.replace(/<\/head>/g , "</div>");
+      contenuReplaced = contenuReplaced.replace(/<hi/g , "<i");
+      contenuReplaced = contenuReplaced.replace(/<\/hi>/g , "</i>");
+      console.log("Contenu : " , contenuReplaced);
+
 
       //create figure & div modal
       var figure = $('<div class="col-xs-3"><figure></figure></div>'),
@@ -36,7 +46,7 @@ $(function () {
                           <h4 class="modal-title" id="myModalLabel">' + name + '</h4>\
                         </div>\
                         <div class="modal-body contentTei">\
-                          ' + text + '\
+                          ' + contenuReplaced + '\
                         </div>\
                         <div class="modal-footer">\
                           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>\
