@@ -1,0 +1,125 @@
+/*
+* viewContent.less to read a TEI file
+*/
+
+@import url('http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic|Gentium+Book+Basic:400,400italic,700,700italic');
+
+.contentTei{
+
+	// Call base variables file which call TEI-Boilerplate base file
+	@import "baseVariables.less";
+
+	// Define custom variables & Styles
+	@background-color:#FEFEFE;
+	@color:#2A3744;
+	@body-font-size: 15px;
+	@body-font-family: "Helvetica Neue" ,"Open Sans ",Helvetica,Arial,sans-serif;
+	@display : none;
+	@primaryColor : #B1A0A0;
+	@secondColor : #FEFEFE;
+	@coloredColor : #CC6A63;
+
+
+	//Surcharge
+	p{
+		text-align: left;
+	}
+
+	back ,respstmt , ns\:stdf , titlestmt author , text titlepage , text div[type="keyword"] , p[rend="figure-title"] , figure , titlestmt title[xml\:lang="en"] , div[type="abstract"][xml\:lang="en"]{
+		display: @display;
+	}
+
+	titlestmt title{
+		width: 100%;
+		font-size: 19px;
+		//float: left;
+		font-weight: bold;
+	}
+
+	title:last-child{
+		margin-bottom: 45px 
+	}
+
+	teiHeader{
+		border-bottom: 1px solid transparent;
+	}
+
+	note{
+		display: @display;
+		width: 100%;
+		padding: 15px;
+		background: @primaryColor;
+		color: #FEFEFE;
+		border-radius: 0;
+		box-shadow: none;
+		border: none;
+	}
+
+	div[type="div1"] > w , div[subtype="level1"]{
+		padding: 12px;
+		font-size: 19px;
+		font-weight: bold;
+		color: @coloredColor;
+	}
+
+	div[type="div1"] > p ,div[type="div1"] > list{
+		font-size: 14px;
+		font-weight: normal;
+		color: @color;
+	}
+
+	div[type="div2"] > w , div[subtype="level2"]{
+		padding: 12px;
+		font-size: 17px;
+		font-weight: bold;
+		color: @coloredColor;
+	}
+
+	div[type="div2"] > p , div[type="div2"] > list{
+		font-size: 14px;
+		font-weight: normal;
+		color: @color;
+	}
+
+	div[type="div3"] > w , div[subtype="level3"]{
+		padding: 12px;
+		font-size: 16px;
+		font-weight: bold;
+		color: @coloredColor;
+	}
+
+	div[type="div3"] > p, div[type="div3"] > list{
+		font-size: 14px;
+		font-weight: normal;
+		color: @color;
+	}
+
+
+	div[type="abstract"]{
+		width: 100%;
+		background: @primaryColor;
+		padding: 15px;
+		color: @secondColor;
+	}
+
+	text p > p:first-child{
+		margin-top: 95px;
+	}
+
+	q[rend="quotation"]{
+		float: left;
+		width: 100%;
+		margin-left: 32px;
+		margin-bottom: 5px;
+		padding-left: 8px;
+		font-style: normal;
+		font-size: 16px;
+		font-family: Consolas, "Times New Roman", Verdana;
+		font-style: italic;
+		font-weight: normal;
+		border-left: 4px solid #CCC;
+		color: @color;
+
+	}
+
+}

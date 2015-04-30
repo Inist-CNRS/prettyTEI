@@ -1,31 +1,32 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Pretty TEI demo</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="dist/css/bootstrap-theme.min.css">
+<html lang="fr">
+  <head>
+    <title>Pretty TEI demo</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="vendor/css/bootstrap-switch.min.css">
 
-        <!-- html Style -->
-        <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="dist/css/style.css">
 
-        <!-- TEI LESS generated Style -->
-        <link rel="stylesheet" href="css/tei.css">
-    </head>
-    <body>
-        <div class="container">
-            <h1 class="col-lg-12">Drag & Drop your TEI files to watch them with prettyTEI:</h1>
-            <div class="row">
-                <div class="col-sm-2"></div>
+    <link rel="stylesheet" href="dist/css/contentTei.min.css">
+    <link rel="stylesheet" href="dist/css/formTei.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <!--[if lt IE 9]>
+        <p class="alert alert-danger text-center">Vous utilisez un navigateur <strong>dépassé</strong>. Veuillez <a href="http://browsehappy.com/">télécharger un navigateur plus récent</a> pour améliorer votre expérience.</p>
+      <![endif]-->
 
-                <section id="uploadDiv" class="col-sm-8">
-                    <div id="dropArea" draggable='true'>Drag & drop files here</div>
-                </section>
-
-                <section id="listDiv" class="col-sm-12">
-                </section>
+      <header id="header">
+        <nav class="navbar navbar-inverse navbar-top">
+          <div class="container">
+            <div class="navbar-header prettyTitle">
+              <a class="navbar-brand" href="#">PrettyTEI</a>
             </div>
+<<<<<<< HEAD
         </div>
   
         <script src="http//code.jquery.com/jquery-1.11.2.min.js"></script>
@@ -41,76 +42,41 @@
             var dropArea = $('#dropArea'),
                 listDiv = $("#listDiv"),
                 nbOfFiles = 0;
+=======
+          </div>
+        </nav>
+      </header>
+>>>>>>> 9d57d3acdd72223246f2c0a3a28f436e6e5d2d51
 
-            function readFile(file,nbOfFiles) {
-                    // Loop through files with a closure so every FileReader are isolated.
-                    var reader = new FileReader();
-                    reader.onload = function(event) { 
-                            // get file content , name
-                            var name = file.name;
-                            var text = event.target.result; 
+      <section id="content">
+        <h1>Drag & Drop your TEI files to watch them with prettyTEI:</h1>
 
-                            //create figure & div modal 
-                            var figure = $('<figure class="figureFile col-sm-3"></figure>'),
-                                div = '<div class="modal fade" id="fileContent'+ nbOfFiles +'" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">\
-                              <div class="modal-dialog teiModal">\
-                                <div class="modal-content">\
-                                  <div class="modal-header">\
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>\
-                                    <h4 class="modal-title" id="myModalLabel">'+ name +'</h4>\
-                                  </div>\
-                                  <div class="modal-body tei">\
-                                    '+ text +'\
-                                  </div>\
-                                  <div class="modal-footer">\
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>\
-                                  </div>\
-                                </div>\
-                              </div>\
-                            </div>';
+        <div class="row">
 
-                            // Add img & figcaption (file name) to figure
-                            figure.append('<img src="dist/img/xml.jpg" class="pictures" alt="xml picture" data-toggle="modal" data-target="#fileContent'+ nbOfFiles +'">','<figcaption>'+ name +'</figcaption>');
+          <div class="col-xs-offset-2 col-xs-8">
+            <section id="uploadDiv">
+              <div class="jumbotron">
+                <input id="switch-offColor" data-off-color="warning" data-on-text="Contenu" data-off-text="Forme" type="checkbox">
+              </div>
+              <div id="dropArea" draggable='true'>Drag & drop files here</div>
+            </section>
+          </div>
 
-                            // Add all created elements to html
-                            listDiv.append(figure);
-                            listDiv.append(div)
+          <div class="col-xs-12">
+            <section id="TEIFilesPlaceholder">
+              <div class="row">
 
-                        }
-                        reader.readAsText(file, "UTF-8");
-                        
-            };
+              </div>
+            </section>
+          </div>
 
+        </div>
+      </section>
+    </div> <!-- container-->
 
-            dropArea.bind({
-              // Effect on dragover
-              dragover: function() {
-                $(this).addClass('hover');
-                return false;
-              },
-              // Remove Class on dragleave
-              dragleave: function() {
-                $(this).removeClass('hover');
-                return false;
-              },
-              //Function when drop file(s)
-              drop: function(e) {
-                $(this).removeClass('hover');
-                e = e || window.event;
-                e.preventDefault();
-
-                e = e.originalEvent || e;
-           
-                var files = (e.files || e.dataTransfer.files);
-
-                // For every file
-                for (var i = 0; i < files.length; i++) {
-                    readFile(files[i],nbOfFiles);
-                    nbOfFiles++;
-                }
-            }
-        });
-        //$(".js-tei").append("<div class='tei'></div>").children("div.tei").load("tei/test.xml");
-        </script>
-    </body>
+    <script src="vendor/js/jquery-1.11.2.min.js"></script>
+    <script src="vendor/js/bootstrap.min.js"></script>
+    <script src="vendor/js/bootstrap-switch.min.js"></script>
+    <script src="dist/js/main.js"></script>
+  </body>
 </html>
