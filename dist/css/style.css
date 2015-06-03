@@ -50,9 +50,11 @@ h1{
   height: auto;
   max-width: 100%;
   box-shadow: 0px 0px 19px #555;
+  cursor: pointer;
 }
 #TEIFilesPlaceholder{
-  margin-top: 150px; 
+    min-height: 350px;
+    margin-top: 150px;
 }
 
 .figureFile{
@@ -63,14 +65,13 @@ h1{
   cursor: pointer;
 }
 
-.figureFile:hover > .pictures{
+.pictures:hover{
   box-shadow: 0px 0px 19px #000;
 }
 
-.figureFile figcaption{
-  text-align: center;
-  color: #555;
-  background: #fff;
+figcaption{
+    text-align: center;
+    color: #555;
 }
 
 .teiModal{

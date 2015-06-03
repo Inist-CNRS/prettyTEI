@@ -33,6 +33,9 @@ $(function () {
       contenuReplaced = contenuReplaced.replace(/<\/head>/g , "</div>");
       contenuReplaced = contenuReplaced.replace(/<hi/g , "<i");
       contenuReplaced = contenuReplaced.replace(/<\/hi>/g , "</i>");
+      contenuReplaced = contenuReplaced.replace(/<note/g , "<div");
+      contenuReplaced = contenuReplaced.replace(/<\/note>/g , "</div>");
+      contenuReplaced = contenuReplaced.replace(/<p rend="footnote">/g , "");
       console.log("Contenu : " , contenuReplaced);
 
 

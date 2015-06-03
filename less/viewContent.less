@@ -12,8 +12,9 @@
 	// Define custom variables & Styles
 	@background-color:#FEFEFE;
 	@color:#2A3744;
-	@body-font-size: 15px;
-	@body-font-family: "Helvetica Neue" ,"Open Sans ",Helvetica,Arial,sans-serif;
+	@body-font-size: 16px;
+	@body-font-family: "Georgia" , serif;
+	@titles-font-family: "Helvetica Neue" ,"Open Sans ",Helvetica,Arial,sans-serif;
 	@display : none;
 	@primaryColor : #B1A0A0;
 	@secondColor : #FEFEFE;
@@ -22,7 +23,8 @@
 
 	//Surcharge
 	p{
-		text-align: left;
+		text-align: justify;
+        text-indent: 2vw;
 	}
 
 	back ,respstmt , ns\:stdf , titlestmt author , text titlepage , text div[type="keyword"] , p[rend="figure-title"] , figure , titlestmt title[xml\:lang="en"] , div[type="abstract"][xml\:lang="en"]{
@@ -31,9 +33,11 @@
 
 	titlestmt title{
 		width: 100%;
-		font-size: 19px;
-		//float: left;
+		font-size: 25px;
 		font-weight: bold;
+        font-family: @titles-font-family;
+        font-style: italic;
+        color: #666;
 	}
 
 	title:last-child{
@@ -41,6 +45,7 @@
 	}
 
 	teiHeader{
+        text-align: center;
 		border-bottom: 1px solid transparent;
 	}
 
@@ -57,39 +62,39 @@
 
 	div[type="div1"] > w , div[subtype="level1"]{
 		padding: 12px;
-		font-size: 19px;
+		font-size: 22px;
 		font-weight: bold;
 		color: @coloredColor;
+        font-family: @titles-font-family;
 	}
 
 	div[type="div1"] > p ,div[type="div1"] > list{
-		font-size: 14px;
 		font-weight: normal;
 		color: @color;
 	}
 
 	div[type="div2"] > w , div[subtype="level2"]{
 		padding: 12px;
-		font-size: 17px;
+		font-size: 20px;
 		font-weight: bold;
 		color: @coloredColor;
+        font-family: @titles-font-family;
 	}
 
 	div[type="div2"] > p , div[type="div2"] > list{
-		font-size: 14px;
 		font-weight: normal;
 		color: @color;
 	}
 
 	div[type="div3"] > w , div[subtype="level3"]{
 		padding: 12px;
-		font-size: 16px;
+		font-size: 18px;
 		font-weight: bold;
 		color: @coloredColor;
+        font-family: @titles-font-family;
 	}
 
 	div[type="div3"] > p, div[type="div3"] > list{
-		font-size: 14px;
 		font-weight: normal;
 		color: @color;
 	}
@@ -106,6 +111,10 @@
 		margin-top: 95px;
 	}
 
+    p[rend="footnote"]{
+        font-style: italic;
+    }
+
 	q[rend="quotation"]{
 		float: left;
 		width: 100%;
@@ -121,5 +130,7 @@
 		color: @color;
 
 	}
+    
+    
 
 }
