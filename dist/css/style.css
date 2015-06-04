@@ -111,6 +111,10 @@ figcaption{
   flex-flow: row-reverse;
 }
 
+.modal-dialog{
+    max-width: 125ch;
+}
+
 .modal-body{
   height: 90vh;
   overflow-y: auto;

@@ -36,25 +36,36 @@ $(function () {
     reader.onload = function (event) {
       // get file content , name
 
-      var contenuReplaced;
+    var canAdd = true;
+    if (localStorage.teiFiles) {
+        var currentTeiFiles = JSON.parse(localStorage.teiFiles);
+        for (var i = 0; i < currentTeiFiles.length; i++) {
+            if (currentTeiFiles[i].fileName === file.name) {
+                canAdd = false;
+            }
+        }
+    }
+    if(canAdd) {
 
-      var name = file.name;
-      var idName = name.replace(/\.|_/g , "-");
-      var text = event.target.result;
+        var contenuReplaced;
 
-      contenuReplaced = text.replace(/<head/g , "<div");
-      contenuReplaced = contenuReplaced.replace(/<\/head>/g , "</div>");
-      contenuReplaced = contenuReplaced.replace(/<hi/g , "<i");
-      contenuReplaced = contenuReplaced.replace(/<\/hi>/g , "</i>");
-      contenuReplaced = contenuReplaced.replace(/<note/g , "<div");
-      contenuReplaced = contenuReplaced.replace(/<\/note>/g , "</div>");
-      contenuReplaced = contenuReplaced.replace(/<p rend="footnote">/g , "");
-      console.log("Contenu : " , contenuReplaced);
+        var name = file.name;
+        var idName = name.replace(/\.|_/g, "-");
+        var text = event.target.result;
+
+        contenuReplaced = text.replace(/<head/g, "<div");
+        contenuReplaced = contenuReplaced.replace(/<\/head>/g, "</div>");
+        contenuReplaced = contenuReplaced.replace(/<hi/g, "<i");
+        contenuReplaced = contenuReplaced.replace(/<\/hi>/g, "</i>");
+        contenuReplaced = contenuReplaced.replace(/<note/g, "<div");
+        contenuReplaced = contenuReplaced.replace(/<\/note>/g, "</div>");
+        contenuReplaced = contenuReplaced.replace(/<p rend="footnote">/g, "");
+        console.log("Contenu : ", contenuReplaced);
 
 
-      //create figure & div modal
-      var figure = $('<div class="col-xs-3"><figure></figure></div>'),
-        modal = '<div class="modal fade" id="' + idName + '" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">\
+        //create figure & div modal
+        var figure = $('<div class="col-xs-3"><figure></figure></div>'),
+            modal = '<div class="modal fade" id="' + idName + '" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">\
                     <div class="modal-dialog teiModal">\
                       <div class="modal-content">\
                         <div class="modal-header">\
@@ -71,41 +82,42 @@ $(function () {
                     </div>\
                   </div>';
 
-      // Add img & figcaption (file name) to figure
-      figure.children("figure").append('<img src="vendor/img/xml.jpg" class="pictures" alt="xml picture" data-toggle="modal" data-target="#' + idName + '">', '<figcaption>' + name + '</figcaption>');
+        // Add img & figcaption (file name) to figure
+        figure.children("figure").append('<img src="vendor/img/xml.jpg" class="pictures" alt="xml picture" data-toggle="modal" data-target="#' + idName + '">', '<figcaption>' + name + '</figcaption>');
 
         console.log(figure[0].outerHTML);
 
         if (localStorage.teiFiles) {
-            var currentTeiFiles = JSON.parse(localStorage.teiFiles);
             currentTeiFiles.push(
                 {
-                    name : idName,
-                    figure : figure[0].outerHTML,
-                    modale : modal
+                    name: idName,
+                    fileName : name,
+                    figure: figure[0].outerHTML,
+                    modale: modal
                 }
             );
             localStorage.teiFiles = JSON.stringify(currentTeiFiles);
         }
-        else{
+        else {
             localStorage["teiFiles"] = JSON.stringify([
                     {
-                        name : idName,
-                        figure : figure[0].outerHTML,
-                        modale : modal
+                        name: idName,
+                        fileName : name,
+                        figure: figure[0].outerHTML,
+                        modale: modal
                     }
                 ]
             );
         }
-      // Add all created elements to html
-      $TEIFilesPlaceholder.append(figure);
-      $("body").append(modal);
+        // Add all created elements to html
+        $TEIFilesPlaceholder.append(figure);
+        $("body").append(modal);
+    }
 
     };
     reader.readAsText(file, "UTF-8");
 
-  }
-  ;
+  };
 
 
   dropArea.bind({
