@@ -61,6 +61,29 @@ $(function () {
       // Add img & figcaption (file name) to figure
       figure.children("figure").append('<img src="vendor/img/xml.jpg" class="pictures" alt="xml picture" data-toggle="modal" data-target="#fileContent' + nbOfFiles + '">', '<figcaption>' + name + '</figcaption>');
 
+        console.log(figure[0].outerHTML);
+
+        if (localStorage.teiFiles) {
+            var currentTeiFiles = JSON.parse(localStorage.teiFiles);
+            currentTeiFiles.push(
+                {
+                    name : name,
+                    figure : figure[0].outerHTML,
+                    modale : modal
+                }
+            );
+            localStorage.teiFiles = JSON.stringify(currentTeiFiles);
+        }
+        else{
+            localStorage["teiFiles"] = JSON.stringify([
+                    {
+                        name : name,
+                        figure : figure,
+                        modale : modal
+                    }
+                ]
+            );
+        }
       // Add all created elements to html
       $TEIFilesPlaceholder.append(figure);
       $("body").append(modal);
