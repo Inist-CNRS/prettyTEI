@@ -1,4 +1,5 @@
 $(function () {
+
   $("input[type=\"checkbox\"], input[type=\"radio\"]").not("[data-switch-no-init]").bootstrapSwitch();
   $('input[type=\"checkbox\"]').on('switchChange.bootstrapSwitch', function (event, state) {
     $('.modal-body').toggleClass("contentTei formTei");
@@ -13,11 +14,21 @@ $(function () {
     $TEIFilesPlaceholder = $("#TEIFilesPlaceholder").children(".row"),
     nbOfFiles = 0;
 
-  /*
-   * readFile()
-   * @param file is a single file got by HTML5 file api
-   * @param nbOfFiles is an increment INT , to count all files sent to drag & dropp
-   */
+    if (localStorage.teiFiles) {
+        var currentTeiFiles = JSON.parse(localStorage.teiFiles);
+
+        for(var i in currentTeiFiles){
+            $TEIFilesPlaceholder.append(currentTeiFiles[i].figure);
+            $("body").append(currentTeiFiles[i].modale);
+        }
+    }
+
+
+    /*
+     * readFile()
+     * @param file is a single file got by HTML5 file api
+     * @param nbOfFiles is an increment INT , to count all files sent to drag & dropp
+     */
   function readFile(file, nbOfFiles) {
     // Loop through files with a closure so every FileReader are isolated.
     var reader = new FileReader();
@@ -27,6 +38,7 @@ $(function () {
       var contenuReplaced;
 
       var name = file.name;
+      var idName = name.replace(/\.|_/g , "-");
       var text = event.target.result;
 
       contenuReplaced = text.replace(/<head/g , "<div");
@@ -41,7 +53,7 @@ $(function () {
 
       //create figure & div modal
       var figure = $('<div class="col-xs-3"><figure></figure></div>'),
-        modal = '<div class="modal fade" id="fileContent' + nbOfFiles + '" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">\
+        modal = '<div class="modal fade" id="' + idName + '" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">\
                     <div class="modal-dialog teiModal">\
                       <div class="modal-content">\
                         <div class="modal-header">\
@@ -59,7 +71,7 @@ $(function () {
                   </div>';
 
       // Add img & figcaption (file name) to figure
-      figure.children("figure").append('<img src="vendor/img/xml.jpg" class="pictures" alt="xml picture" data-toggle="modal" data-target="#fileContent' + nbOfFiles + '">', '<figcaption>' + name + '</figcaption>');
+      figure.children("figure").append('<img src="vendor/img/xml.jpg" class="pictures" alt="xml picture" data-toggle="modal" data-target="#' + idName + '">', '<figcaption>' + name + '</figcaption>');
 
         console.log(figure[0].outerHTML);
 
@@ -67,7 +79,7 @@ $(function () {
             var currentTeiFiles = JSON.parse(localStorage.teiFiles);
             currentTeiFiles.push(
                 {
-                    name : name,
+                    name : idName,
                     figure : figure[0].outerHTML,
                     modale : modal
                 }
@@ -77,8 +89,8 @@ $(function () {
         else{
             localStorage["teiFiles"] = JSON.stringify([
                     {
-                        name : name,
-                        figure : figure,
+                        name : idName,
+                        figure : figure[0].outerHTML,
                         modale : modal
                     }
                 ]

@@ -33,7 +33,7 @@
 
 	titlestmt title{
 		width: 100%;
-		font-size: 25px;
+		font-size: 27px;
 		font-weight: bold;
         font-family: @titles-font-family;
         font-style: italic;
@@ -60,9 +60,12 @@
 		border: none;
 	}
 
-	div[type="div1"] > w , div[subtype="level1"]{
+	div[type="div1"],div[type="div2"],div[type="div3"]{
 		padding: 12px;
-		font-size: 22px;
+	}
+
+	div[type="div1"] > w , div[subtype="level1"]{
+		font-size: 24px;
 		font-weight: bold;
 		color: @coloredColor;
         font-family: @titles-font-family;
@@ -75,8 +78,9 @@
 
 	div[type="div2"] > w , div[subtype="level2"]{
 		padding: 12px;
-		font-size: 20px;
+		font-size: 21px;
 		font-weight: bold;
+		font-style: italic;
 		color: @coloredColor;
         font-family: @titles-font-family;
 	}
@@ -89,7 +93,6 @@
 	div[type="div3"] > w , div[subtype="level3"]{
 		padding: 12px;
 		font-size: 18px;
-		font-weight: bold;
 		color: @coloredColor;
         font-family: @titles-font-family;
 	}

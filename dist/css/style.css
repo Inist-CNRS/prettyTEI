@@ -75,6 +75,30 @@ figcaption{
 }
 
 .teiModal{
-  width: 960px;
+  width: 75vw;
+  height: 100vh;
   z-index: 9999;
+  margin: 0 auto;
+}
+
+.modal-title{
+  text-align: center;
+  font-style: italic;
+}
+
+.modal-header{
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: row-reverse;
+}
+
+.modal-body{
+  height: 90vh;
+  overflow-y: auto;
+}
+
+.close{
+  font-size: 30px;
 }
