@@ -14,6 +14,7 @@ $(function () {
     $TEIFilesPlaceholder = $("#TEIFilesPlaceholder").children(".row"),
     nbOfFiles = 0;
 
+    // Get sended files infos if exists
     if (localStorage.teiFiles) {
         var currentTeiFiles = JSON.parse(localStorage.teiFiles);
 
@@ -134,6 +135,11 @@ $(function () {
         nbOfFiles++;
       }
     }
+  });
+
+  $(".glyphicon-trash").on("click" , function(){
+     localStorage.clear();
+      $TEIFilesPlaceholder.html('');
   });
 
 });

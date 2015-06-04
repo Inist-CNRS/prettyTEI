@@ -18,6 +18,23 @@ h1{
   color: #fff !important;
 }
 
+.jumbotron{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.glyphicon-trash{
+  font-size: 20px;
+  cursor: pointer;
+  color: #555555;
+}
+
+.glyphicon-trash:hover{
+  transform: scale(1.3);
+  color : #000;
+}
+
 #uploadDiv{
   text-align: center;
 }
