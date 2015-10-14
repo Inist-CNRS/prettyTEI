@@ -1300,12 +1300,10 @@ title[level=m] {
     font-style:italic;
 }
 
-/* We transformed teiHeader//title to tei.title  */
-/* as a hack to solve a JavaScript/jQuery issue. */
-titleStmt > tei-title {
+/* RL: tei-title back to normal "title"*/
+titleStmt > title {
 display:block;
 font-family: @head-font-family;
-font-weight: bold;
 font-weight:bold !important;
 font-size:150%;
 }

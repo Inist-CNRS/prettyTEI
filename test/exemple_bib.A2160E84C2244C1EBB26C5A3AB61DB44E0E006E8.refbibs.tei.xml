@@ -1,0 +1,1311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="test.css" title="Default style"?>
+<TEI xml:id="istex-A2160E84C2244C1EBB26C5A3AB61DB44E0E006E8">
+ <teiHeader/>
+ <text>
+  <front/>
+  <body/>
+  <back>
+   <listBibl>
+<biblStruct xml:id="b0">
+ <analytic>
+  <title level="a" type="main">Group B streptococcal infections</title>
+  <author>
+   <persName>
+    <forename type="first">Cj</forename>
+    <surname>Baker</surname>
+   </persName>
+  </author>
+ </analytic>
+ <monogr>
+  <title level="j">Clin</title>
+  <imprint>
+   <biblScope unit="volume">124</biblScope>
+   <biblScope unit="page" from="59" to="70" />
+   <date type="published" when="1997" />
+  </imprint>
+ </monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+ <analytic>
+  <title level="a" type="main">Epidemiology of group B streptococcal disease in the United States: Shifting paradigms</title>
+  <author>
+   <persName>
+    <forename type="first">A</forename>
+    <surname>Schuchat</surname>
+   </persName>
+  </author>
+ </analytic>
+ <monogr>
+  <title level="j">Clin Microbiol Rev</title>
+  <imprint>
+   <biblScope unit="volume">11</biblScope>
+   <biblScope unit="page" from="497" to="513" />
+   <date type="published" when="1998" />
+  </imprint>
+ </monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+ <analytic>
+  <title level="a" type="main">A population-based assessment of invasive disease due to group B Streptococcus in nonpregnant adults</title>
+  <author>
+   <persName>
+    <forename type="first">Mm</forename>
+    <surname>Farley</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">C</forename>
+    <surname>Harvey</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">T</forename>
+    <surname>Stull</surname>
+   </persName>
+  </author>
+ </analytic>
+ <monogr>
+  <title level="j">N EnglJ Med</title>
+  <imprint>
+   <biblScope unit="volume">328</biblScope>
+   <biblScope unit="page" from="1807" to="1811" />
+   <date type="published" when="1993" />
+  </imprint>
+ </monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+ <analytic>
+  <title level="a" type="main">Report from a multistate active surveillance system Centers for Disease Control and Prevention: Adoption of hospital policies for prevention of perinatal group B streptococcal disease-- United States, 1997</title>
+  <author>
+   <persName>
+    <forename type="first">Km</forename>
+    <surname>Zangwill</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">A</forename>
+    <surname>Schuchat</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">Jd</forename>
+    <surname>Wenger</surname>
+   </persName>
+  </author>
+ </analytic>
+ <monogr>
+  <title level="m">Group B streptococcal disease in the United States</title>
+  <imprint>
+   <date type="published" when="1990" />
+   <biblScope unit="page" from="4" to="25" />
+  </imprint>
+ </monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+ <analytic>
+  <title level="a" type="main">Invasive group B streptococcal disease in adults: A population-based study in metropolitan Atlanta</title>
+  <author>
+   <persName>
+    <forename type="first">B</forename>
+    <surname>Schwartz</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">A</forename>
+    <surname>Schuchat</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">Mj</forename>
+    <surname>Oxtoby</surname>
+   </persName>
+  </author>
+ </analytic>
+ <monogr>
+  <title level="j">JAMA</title>
+  <imprint>
+   <biblScope unit="volume">266</biblScope>
+   <biblScope unit="page" from="112" to="1114" />
+   <date type="published" when="1991" />
+  </imprint>
+ </monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+ <analytic>
+  <title level="a" type="main">The changing spectrum of group B streptococcal disease in infants: An eleven-year experience in a tertiary care hospital</title>
+  <author>
+   <persName>
+    <forename type="first">P</forename>
+    <surname>Yagupsky</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">Ma</forename>
+    <surname>Menegus</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">Kr</forename>
+    <surname>Powei1</surname>
+   </persName>
+  </author>
+ </analytic>
+ <monogr>
+  <title level="j">Pediatr Infect DisJ</title>
+  <imprint>
+   <biblScope unit="volume">10</biblScope>
+   <biblScope unit="page" from="801" to="808" />
+   <date type="published" when="1991" />
+  </imprint>
+ </monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+ <analytic>
+  <title level="a" type="main">Invasive group B streptococcal disease in children beyond early infancy</title>
+  <author>
+   <persName>
+    <forename type="first">Sm</forename>
+    <surname>Hussain</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">Gs</forename>
+    <surname>Luedtke</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">Cj</forename>
+    <surname>Baker</surname>
+   </persName>
+  </author>
+ </analytic>
+ <monogr>
+  <title level="j">Pediatr Infect DisJ</title>
+  <imprint>
+   <biblScope unit="volume">14</biblScope>
+   <biblScope unit="page" from="278" to="281" />
+   <date type="published" when="1995" />
+  </imprint>
+ </monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+ <analytic>
+  <title level="a" type="main">Neonatal sepsis caused by a new group B streptococcal serotype</title>
+  <author>
+   <persName>
+    <forename type="first">Ma</forename>
+    <surname>Rench</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">Cj</forename>
+    <surname>Baker</surname>
+   </persName>
+  </author>
+ </analytic>
+ <monogr>
+  <title level="j">J Pediatr</title>
+  <imprint>
+   <biblScope unit="volume">122</biblScope>
+   <biblScope unit="page" from="638" to="640" />
+   <date type="published" when="1993" />
+  </imprint>
+ </monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+ <analytic>
+  <title level="a" type="main">Capsular polysaccharide types of group B streptococcal isolates from neonates with earlyonset systemic infection</title>
+  <author>
+   <persName>
+    <forename type="first">Fyc</forename>
+    <surname>Lin</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">Jd</forename>
+    <surname>Clemens</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">Ph</forename>
+    <surname>Azimi</surname>
+   </persName>
+  </author>
+ </analytic>
+ <monogr>
+  <title level="j">J Infect Dis</title>
+  <imprint>
+   <biblScope unit="volume">177</biblScope>
+   <biblScope unit="page" from="790" to="792" />
+   <date type="published" when="1998" />
+  </imprint>
+ </monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+ <analytic>
+  <title level="a" type="main">Serotype distribution of invasive group B streptococcal isolates in Maryland: Implications for vaccine formulation</title>
+  <author>
+   <persName>
+    <forename type="first">I</forename>
+    <forename type="middle">1</forename>
+    <surname>Harrison</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">Lh</forename>
+    <surname>Elliott</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">Ja</forename>
+    <surname>Dwyer</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">Dm</forename>
+   </persName>
+  </author>
+ </analytic>
+ <monogr>
+  <title level="j">J Infect Dis</title>
+  <imprint>
+   <biblScope unit="volume">177</biblScope>
+   <biblScope unit="page" from="998" to="1002" />
+   <date type="published" when="1998" />
+  </imprint>
+ </monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+ <analytic>
+  <title level="a" type="main">Prevention of perinatal group B streptococcal disease: A punic health perspective</title>
+  <author>
+   <persName>
+    <forename type="first">A</forename>
+    <surname>Schuchat</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">C</forename>
+    <surname>Whitney</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">K</forename>
+    <surname>Zangwill</surname>
+   </persName>
+  </author>
+ </analytic>
+ <monogr>
+  <title level="j">MMWR</title>
+  <imprint>
+   <biblScope unit="volume">45</biblScope>
+   <biblScope unit="page" from="1" to="24" />
+   <date type="published" when="1996" />
+  </imprint>
+ </monogr>
+ <note>suppl. RR-7</note>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+ <analytic>
+  <title level="a" type="main">College of Obstetricians and Gynecologists Committee on Obstetric Practice: Prevention of early-onset group B streptococcal disease in newborns</title>
+  <author>
+   <persName>
+    <surname>American</surname>
+   </persName>
+  </author>
+ </analytic>
+ <monogr>
+  <title level="j">ACOG Committee Opinion</title>
+  <imprint>
+   <publisher>American College of Obstetricians and Gynecologists</publisher>
+   <biblScope unit="issue">173</biblScope>
+   <date type="published" when="1996-06" />
+   <publisher>American College of Obstetricians and Gynecologists</publisher>
+  </imprint>
+ </monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+ <analytic>
+  <title level="a" type="main">Academy of Pediatrics: Revised guidelines for prevention of early-onset group B streptococcal (GBS) infection</title>
+  <author>
+   <persName>
+    <surname>American</surname>
+   </persName>
+  </author>
+ </analytic>
+ <monogr>
+  <title level="j">Pediatrics</title>
+  <imprint>
+   <biblScope unit="volume">99</biblScope>
+   <biblScope unit="page" from="489" to="496" />
+   <date type="published" when="1997" />
+  </imprint>
+ </monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+ <analytic>
+  <title level="a" type="main">Maternal peripartnm complications associated with vaginal group B streptococcal colonization</title>
+  <author>
+   <persName>
+    <forename type="first">Mj</forename>
+    <surname>Krohn</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">Sl</forename>
+    <surname>Hillier</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">Cj</forename>
+    <surname>Baker</surname>
+   </persName>
+  </author>
+ </analytic>
+ <monogr>
+  <title level="j">J Infect Dis</title>
+  <imprint/>
+ </monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+ <analytic>
+  <title level="a" type="main">Colonization with group B streptococci in pregnancy and adverse outcome</title>
+  <author>
+   <persName>
+    <forename type="first">Klebanoffma</forename>
+    <surname>Reganja</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">Rp</forename>
+    <surname>Nugent</surname>
+   </persName>
+  </author>
+ </analytic>
+ <monogr>
+  <title level="j">Am J Obstet Gynecol</title>
+  <imprint>
+   <biblScope unit="volume">174</biblScope>
+   <biblScope unit="page" from="1354" to="360" />
+   <date type="published" when="1996" />
+  </imprint>
+ </monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+ <analytic>
+  <title level="a" type="main">Increased recovery of group B Streptococcus by the inclusion of rectal culturing and enrichment</title>
+  <author>
+   <persName>
+    <forename type="first">Mw</forename>
+    <surname>Platt</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <surname>Mclaughlinjc</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">Gj</forename>
+    <surname>Gilson</surname>
+   </persName>
+  </author>
+ </analytic>
+ <monogr>
+  <title level="j">Diagn Microbiol Infect Dis</title>
+  <imprint>
+   <biblScope unit="volume">21</biblScope>
+   <biblScope unit="page" from="65" to="68" />
+   <date type="published" when="1995" />
+  </imprint>
+ </monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+ <analytic>
+  <title level="a" type="main">The epidemiology of group B streptococcal colonization in pregnancy</title>
+  <author>
+   <persName>
+    <surname>Reganja</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">Ma</forename>
+    <surname>Klebanoff</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">Rp</forename>
+    <surname>Nugent</surname>
+   </persName>
+  </author>
+ </analytic>
+ <monogr>
+  <title level="j">Obstet Gynecol</title>
+  <imprint>
+   <biblScope unit="volume">77</biblScope>
+   <biblScope unit="page" from="604" to="610" />
+  </imprint>
+ </monogr>
+ <note>i991</note>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+ <analytic>
+  <title level="a" type="main">Group B streptococcal colonization in parturient women differs among racial groups. Program and Abstracts of the 35th Interscience Conference on Antimicrobial Agents and Chemotherapy</title>
+  <author>
+   <persName>
+    <forename type="first">Df</forename>
+    <surname>Zaleznik</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">Ma</forename>
+    <surname>Krohn</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">Sl</forename>
+    <surname>Hillier</surname>
+   </persName>
+  </author>
+ </analytic>
+ <monogr>
+  <title level="j">Am Soc Microbiol</title>
+  <imprint>
+   <date type="published" when="1995" />
+  </imprint>
+ </monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+ <analytic>
+  <title level="a" type="main">Changing epidemiology of group B streptococcal colonization</title>
+  <author>
+   <persName>
+    <forename type="first">Me</forename>
+    <surname>Hickman</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">Ma</forename>
+    <surname>Rench</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">P</forename>
+    <surname>Ferrieri</surname>
+   </persName>
+  </author>
+ </analytic>
+ <monogr>
+  <title level="j">Pediatrics</title>
+  <imprint/>
+ </monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+ <analytic>
+  <title level="a" type="main">Prevention of early-onset neonatal group B streptococcal disease with selective intrapartum chemoprophylaxis</title>
+  <author>
+   <persName>
+    <forename type="first">Km</forename>
+    <surname>Boyer</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">Sp</forename>
+    <surname>Gotoff</surname>
+   </persName>
+  </author>
+ </analytic>
+ <monogr>
+  <title level="j">N EnglJ Med</title>
+  <imprint>
+   <biblScope unit="volume">314</biblScope>
+   <biblScope unit="page" from="1665" to="1669" />
+   <date type="published" when="1986" />
+  </imprint>
+ </monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+ <monogr>
+  <title level="m" type="main">Relationship between timing of intrapartnm ampicillin administration and its effectiveness in preventing vertical transmission of group B streptococci Program and Abstracts of the 35th Interscience Conference on Antimicrobial Agents and Chemotherapy</title>
+  <author>
+   <persName>
+    <forename type="first">Mm</forename>
+    <surname>Cueto</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">J</forename>
+    <surname>Sanchez</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">A</forename>
+    <surname>Sampedro</surname>
+   </persName>
+  </author>
+  <imprint>
+   <date type="published" when="1995" />
+   <publisher>Am Soc Microbiol</publisher>
+   <pubPlace>San Francisco, CA</pubPlace>
+  </imprint>
+ </monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+ <analytic>
+  <title level="a" type="main">Invasive group B streptococcal disease: The emergence of seroty-pe V</title>
+  <author>
+   <persName>
+    <forename type="first">I-Im</forename>
+    <surname>Blumberg</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">Ds</forename>
+    <surname>Stephens</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">M</forename>
+    <surname>Modansky</surname>
+   </persName>
+  </author>
+ </analytic>
+ <monogr>
+  <title level="j">J Infect Dis</title>
+  <imprint>
+   <biblScope unit="volume">173</biblScope>
+   <biblScope unit="page" from="365" to="373" />
+   <date type="published" when="1996" />
+  </imprint>
+ </monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+ <analytic>
+  <title level="a" type="main">Early-onset group B streptococcal sepsis: A current assessment</title>
+  <author>
+   <persName>
+    <forename type="first">Le</forename>
+    <surname>Weisman</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">Bj</forename>
+    <surname>Stoll</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">Df</forename>
+    <surname>Cruess</surname>
+   </persName>
+  </author>
+ </analytic>
+ <monogr>
+  <title level="j">J Pediatr</title>
+  <imprint>
+   <biblScope unit="volume">12</biblScope>
+   <biblScope unit="page" from="428" to="433" />
+   <date type="published" when="1992" />
+  </imprint>
+ </monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+ <analytic>
+  <title level="a" type="main">No lumbar puncture in the evaluation for early neonatal sepsis: Will meningitis be missed?</title>
+  <author>
+   <persName>
+    <forename type="first">Te</forename>
+    <surname>Wiswell</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">S</forename>
+    <surname>Baumgart</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">Cm</forename>
+    <surname>Gannon</surname>
+   </persName>
+  </author>
+ </analytic>
+ <monogr>
+  <title level="j">Pediatrics</title>
+  <imprint>
+   <biblScope unit="volume">95</biblScope>
+   <biblScope unit="page" from="803" to="806" />
+   <date type="published" when="1995" />
+  </imprint>
+ </monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+ <analytic>
+  <title level="a" type="main">Occult bacteremia with group B streptococci in an outpatient setting</title>
+  <author>
+   <persName>
+    <forename type="first">Bm</forename>
+    <surname>Garcia-Pena</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">Mb</forename>
+    <surname>Harper</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">Gr</forename>
+    <surname>Fleisher</surname>
+   </persName>
+  </author>
+ </analytic>
+ <monogr>
+  <title level="j">Pediatrics</title>
+  <imprint>
+   <biblScope unit="volume">102</biblScope>
+   <biblScope unit="page" from="67" to="72" />
+  </imprint>
+ </monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+ <analytic>
+  <title level="a" type="main">Recurrent group B streptococcal infections in infants: Clinical and microbiologic aspects</title>
+  <author>
+   <persName>
+    <forename type="first">Pa</forename>
+    <surname>Green</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">Kv</forename>
+    <surname>Singh</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">Be</forename>
+    <surname>Murray</surname>
+   </persName>
+  </author>
+ </analytic>
+ <monogr>
+  <title level="j">J Pediatr</title>
+  <imprint>
+   <biblScope unit="volume">125</biblScope>
+   <biblScope unit="page" from="931" to="938" />
+  </imprint>
+ </monogr>
+ <note>i994</note>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+ <analytic>
+  <title level="a" type="main">Relapsing invasive group B streptococcal infection in adults</title>
+  <author>
+   <persName>
+    <forename type="first">Lh</forename>
+    <surname>Harrison</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">Alia</forename>
+    <surname>Dwyer</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">Dm</forename>
+    <surname>Libontijp</surname>
+   </persName>
+  </author>
+ </analytic>
+ <monogr>
+  <title level="j">Ann Intern Med</title>
+  <imprint>
+   <biblScope unit="volume">123</biblScope>
+   <biblScope unit="page" from="421" to="427" />
+   <date type="published" when="1995" />
+  </imprint>
+ </monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+ <analytic>
+  <title level="a" type="main">Risk factors for group B streptococcal disease in adults</title>
+  <author>
+   <persName>
+    <forename type="first">La</forename>
+    <surname>Jackson</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">R</forename>
+    <surname>Hilsdon</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">Mm</forename>
+    <surname>Farley</surname>
+   </persName>
+  </author>
+ </analytic>
+ <monogr>
+  <title level="j">Ann Intern Med</title>
+  <imprint>
+   <biblScope unit="volume">123</biblScope>
+   <biblScope unit="page" from="415" to="420" />
+   <date type="published" when="1995" />
+  </imprint>
+ </monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+ <analytic>
+  <title level="a" type="main">Antimicrobial susceptibilities of group B streptococci isolated between 1992 and 1996 from patients with bacteremia or meningitis</title>
+  <author>
+   <persName>
+    <forename type="first">M</forename>
+    <surname>Fernandez</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">Me</forename>
+    <surname>Hickman</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">Cj</forename>
+    <surname>Baker</surname>
+   </persName>
+  </author>
+ </analytic>
+ <monogr>
+  <title level="j">Antimicrob Agents Chemother</title>
+  <imprint>
+   <biblScope unit="volume">42</biblScope>
+   <biblScope unit="page" from="1517" to="1519" />
+   <date type="published" when="1998" />
+  </imprint>
+ </monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+ <analytic>
+  <title level="a" type="main">Susceptibility of group B and group G streptococci to newer antimicrobial agents</title>
+  <author>
+   <persName>
+    <forename type="first">Kv: I</forename>
+    <surname>Rolston</surname>
+   </persName>
+  </author>
+ </analytic>
+ <monogr>
+  <title level="j">EurJ Clin Microbiol</title>
+  <imprint>
+   <biblScope unit="volume">5</biblScope>
+   <biblScope unit="page" from="534" to="536" />
+   <date type="published" when="1986" />
+  </imprint>
+ </monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+ <analytic>
+  <title/>
+  <author>
+   <persName>
+    <forename type="first">American</forename>
+    <surname>Academy</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <surname>Pediatrics</surname>
+   </persName>
+  </author>
+ </analytic>
+ <monogr>
+  <title level="m">Report of the Committee on Infectious Diseases</title>
+  <editor>Peter G</editor>
+  <meeting><address><addrLine>Elk Grove Village, IL</addrLine></address></meeting>
+  <imprint>
+   <publisher>American Academy of Pediatrics</publisher>
+   <biblScope unit="page" from="495" to="496" />
+  </imprint>
+ </monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+ <analytic>
+  <title/>
+  <author>
+   <persName>
+    <forename type="first">Cj</forename>
+    <surname>Baker</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">Ms</forename>
+    <surname>Edwards</surname>
+   </persName>
+  </author>
+ </analytic>
+ <monogr>
+  <title level="m">Group B streptococcal infections Infectious Diseases of the Fetus and Newborn Infant</title>
+  <editor>RemingtonJS, KleinJO</editor>
+  <meeting><address><addrLine>Philadelphia, PA, Saunders</addrLine></address></meeting>
+  <imprint>
+   <date type="published" when="1995" />
+   <biblScope unit="page" from="980" to="1108" />
+  </imprint>
+ </monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+ <analytic>
+  <title level="a" type="main">Multiple group B streptococcal infections in a premature infant: Eradication of nasal colonization with rifampin</title>
+  <author>
+   <persName>
+    <forename type="first">Dd</forename>
+    <surname>Millard</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">Me</forename>
+    <surname>Bussey</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">St</forename>
+    <surname>Shulman</surname>
+   </persName>
+  </author>
+ </analytic>
+ <monogr>
+  <title level="j">AmJ Dis Child</title>
+  <imprint>
+   <biblScope unit="volume">139</biblScope>
+   <biblScope unit="page" from="964" to="965" />
+   <date type="published" when="1985" />
+  </imprint>
+ </monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+ <analytic>
+  <title level="a" type="main">In vitro activity of penicillin and rifampin against group B streptococci</title>
+  <author>
+   <persName>
+    <forename type="first">M</forename>
+    <surname>Maduri-Traczewski</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">Eg</forename>
+    <surname>Szymezak</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">Da</forename>
+    <surname>Goldmann</surname>
+   </persName>
+  </author>
+ </analytic>
+ <monogr>
+  <title level="j">J Infect Dis</title>
+  <imprint>
+   <biblScope unit="volume">5592</biblScope>
+   <date type="published" when="1983" />
+  </imprint>
+ </monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+ <analytic>
+  <title level="a" type="main">Prevention of neonatal group B streptococcal disease: Intrapartum detection and chemoprophylaxis of heavily colonized parturients</title>
+  <author>
+   <persName>
+    <forename type="first">N</forename>
+    <surname>Tuppurainen</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">M</forename>
+    <surname>Hallman</surname>
+   </persName>
+  </author>
+ </analytic>
+ <monogr>
+  <title level="j">Obstet</title>
+  <imprint>
+   <biblScope unit="volume">173</biblScope>
+   <biblScope unit="page" from="583" to="587" />
+   <date type="published" when="1989" />
+  </imprint>
+ </monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+ <analytic>
+  <title level="a" type="main">Group B streptococcus and neonatal infections: The case for intrapartum chemoprophylaxis</title>
+  <author>
+   <persName>
+    <forename type="first">Sm</forename>
+    <surname>Garland</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">Jr</forename>
+    <surname>Fliegner</surname>
+   </persName>
+  </author>
+ </analytic>
+ <monogr>
+  <title level="j">Aust NZJ Obstet Gynaecol</title>
+  <imprint>
+   <biblScope unit="volume">31</biblScope>
+   <biblScope unit="page" from="119" to="122" />
+   <date type="published" when="1991" />
+  </imprint>
+ </monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+ <analytic>
+  <title level="a" type="main">Intrapartum chemoprophylaxis of early-onset group B streptococcal disease</title>
+  <author>
+   <persName>
+    <forename type="first">R</forename>
+    <surname>Matorras</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">A</forename>
+    <surname>Garcia-Perea</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">F</forename>
+    <surname>Omenaca</surname>
+   </persName>
+  </author>
+ </analytic>
+ <monogr>
+  <title level="j">Eur J Obstet Gynecol Reprod</title>
+  <imprint>
+   <biblScope unit="volume">140</biblScope>
+   <biblScope unit="page" from="57" to="62" />
+   <date type="published" when="1991" />
+  </imprint>
+ </monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+ <analytic>
+  <title level="a" type="main">Opportunities for prevention of perinatal group B streptococcal disease: A multistate surveillance analysis</title>
+  <author>
+   <persName>
+    <forename type="first">N</forename>
+    <surname>Rosenstein</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">A</forename>
+    <surname>Schuchat</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">Gbs</forename>
+    <surname>Neonatal</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <surname>Disease Study</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <surname>Group</surname>
+   </persName>
+  </author>
+ </analytic>
+ <monogr>
+  <title level="j">Obstet Gynecol</title>
+  <imprint>
+   <biblScope unit="volume">90</biblScope>
+   <biblScope unit="page" from="901" to="906" />
+   <date type="published" when="1997" />
+  </imprint>
+ </monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+ <analytic>
+  <title level="a" type="main">Comparison of prevention strategies for neonatal group B Streptococcal infection: A population-based economic analysis</title>
+  <author>
+   <persName>
+    <surname>Mohle-Boetanijc</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">A</forename>
+    <surname>Schuchat</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">Bd</forename>
+    <surname>Plikaytis</surname>
+   </persName>
+  </author>
+ </analytic>
+ <monogr>
+  <title level="j">JAMA</title>
+  <imprint>
+   <biblScope unit="volume">270</biblScope>
+   <biblScope unit="page" from="1442" to="1448" />
+   <date type="published" when="1993" />
+  </imprint>
+ </monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+ <analytic>
+  <title level="a" type="main">The pediatric costs of strategies for minimizing the risk of early-onset group B streptococcal disease</title>
+  <author>
+   <persName>
+    <forename type="first">Ca</forename>
+    <surname>Fargasonjr</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">M</forename>
+    <surname>Peralta-Carcelen</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">Dj</forename>
+    <surname>Rouse</surname>
+   </persName>
+  </author>
+ </analytic>
+ <monogr>
+  <title level="j">Obstet</title>
+  <imprint>
+   <biblScope unit="volume">190</biblScope>
+   <biblScope unit="page" from="347" to="352" />
+   <date type="published" when="1997" />
+  </imprint>
+ </monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+ <analytic>
+  <title level="a" type="main">Group B streptococcal vaccines</title>
+  <author>
+   <persName>
+    <forename type="first">Cj</forename>
+    <surname>Baker</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">Dl</forename>
+    <surname>Kasper</surname>
+   </persName>
+  </author>
+ </analytic>
+ <monogr>
+  <title level="j">Rev Infect Dis</title>
+  <imprint>
+   <biblScope unit="volume">7</biblScope>
+   <biblScope unit="page" from="458" to="467" />
+   <date type="published" when="1985" />
+  </imprint>
+ </monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+ <analytic>
+  <title level="a" type="main">Immunization of pregnant women with a polysaccharide vaccine of group B Streptococcus</title>
+  <author>
+   <persName>
+    <forename type="first">Cj</forename>
+    <surname>Baker</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">Ma</forename>
+    <surname>Rench</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">Ms</forename>
+    <surname>Edwards</surname>
+   </persName>
+  </author>
+ </analytic>
+ <monogr>
+  <title level="j">N Engl J Med</title>
+  <imprint>
+   <biblScope unit="volume">319</biblScope>
+   <biblScope unit="page" from="1180" to="1185" />
+   <date type="published" when="1988" />
+  </imprint>
+ </monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+ <analytic>
+  <title level="a" type="main">Immune response to type KI group B streptococcal polysaccharide-tetanus toxoid conjugate vaccine</title>
+  <author>
+   <persName>
+    <forename type="first">Dl</forename>
+    <surname>Kasper</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">Lc</forename>
+    <surname>Paoletti</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">Jennings</forename>
+    <surname>~ij</surname>
+   </persName>
+  </author>
+ </analytic>
+ <monogr>
+  <title level="j">J Clin Invest</title>
+  <imprint>
+   <biblScope unit="volume">98</biblScope>
+   <biblScope unit="page" from="2308" to="2314" />
+   <date type="published" when="1996" />
+  </imprint>
+ </monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+ <analytic>
+  <title level="a" type="main">Safety and immunogenicity of capsular polysaccharide-tetanus toxoid conjugate vaccines for group B streptococcal types Ia and Ib</title>
+  <author>
+   <persName>
+    <forename type="first">Cj</forename>
+    <surname>Baker</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">Lc</forename>
+    <surname>Paoletti</surname>
+   </persName>
+  </author>
+  <author>
+   <persName>
+    <forename type="first">Mr</forename>
+    <surname>Wessels</surname>
+   </persName>
+  </author>
+ </analytic>
+ <monogr>
+  <title level="j">J Infect Dis</title>
+  <imprint>
+   <biblScope unit="volume">179</biblScope>
+   <biblScope unit="page" from="142" to="150" />
+   <date type="published" when="1999" />
+  </imprint>
+ </monogr>
+</biblStruct>
+
+   </listBibl>
+  </back>
+ </text>
+</TEI>

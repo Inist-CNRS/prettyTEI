@@ -1,0 +1,166 @@
+@import "base.less";
+
+@color: #000;
+@background-color:#E9E9E9;
+@note-background-color:#FFFFA5;
+@border-color:#A02528;
+@link-color:#3299BB;
+
+@head-font-family: Calibri, sans;
+@body-font-family: Cambria, serif;
+@body-font-size:1em;
+
+
+/* General settings for box around header and text with simple margins */
+teiHeader {
+  display: block;
+  background-color: #F90;
+  border: solid black 2pt;
+  border-radius: .5em;
+  margin: 2em;
+  padding: 1em;
+}
+
+text {
+	display: block ;
+	margin: 2em;
+	padding: 1em;
+}
+
+
+/* bibliographical references stuff */
+biblStruct {
+  background-color: #F90;
+  display: block ;
+  padding: 1em ;
+  border : solid black ;
+  line-height:200% ;
+}
+
+biblStruct > analytic > author {
+  font-size: small;
+  display : inline ;
+  margin-left: 1.5em;
+}
+
+
+biblStruct > analytic > author > persName > surname {
+	font-variant: small-caps;
+	font-weight: bold;
+	font-size: 120%;
+}
+
+biblStruct > analytic > author > *:last-child:after {
+  content: "," ;
+  font-weight: bold;
+}
+
+biblStruct > analytic > title {
+  display : block ;
+  text-decoration:underline;
+}
+
+biblStruct > monogr {
+	display: block ;
+}
+
+
+biblStruct > monogr > title {
+  font-size: 140%;
+  font-style: italic;
+  font-weight: bold;
+}
+biblStruct > monogr > title:after {
+  content: ", " ;
+}
+
+biblStruct idno:before {
+	content: "ID:" ;
+	display: inline ;
+	color: grey
+}
+
+biblStruct > monogr >  imprint > biblScope[unit^="vol"]:before {
+	content: "VOL:" ;
+	display: inline ;
+	color: grey
+}
+biblStruct > monogr > imprint > biblScope[unit^="vol"] {
+	font-style: italic;
+	font-size: 140%;
+}
+
+
+/*
+ * DATE : 2 cas de figure
+ * <date>valeur</date>
+ * <date when="valeur"/>
+*/
+
+// rappel: on a déjà dans base.less
+// date[when]:empty:before {
+//	content: attr(when);
+//}
+
+date[when]:empty:before {
+	color: blue;
+}
+
+// incompatible avec base.less
+//biblStruct > monogr >  imprint > date:before {
+//	content: "DATE:" ;
+//	display: inline ;
+//	color: grey;
+//}
+
+biblStruct > monogr >  imprint > date {
+	font-size: 130%;
+	font-weight: bold;
+	display:block;
+}
+
+
+
+
+/*
+ * PAGES : cas de figures variés
+ * <biblScope unit="pp">valeur</biblScope>
+ * <biblScope unit="pp" from="valeur"/>
+ * <biblScope unit="pp" from="valeur" to="valeur"/>
+ *
+ * <biblScope unit="page">valeur</biblScope>
+ * <biblScope unit="page" from="valeur"/>
+ * <biblScope unit="page" from="valeur" to="valeur2"/>
+*/
+biblStruct > monogr >  imprint > biblScope[unit="page"]:before {
+	content: "PAGES:" ;
+	display: inline ;
+	color: grey;
+}
+
+biblStruct > monogr >  imprint > biblScope[unit="page"] {
+	color: green;
+}
+
+biblStruct > monogr >  imprint > biblScope[unit="page"][from]:after {
+	content: attr(from) '-' attr(to) ;
+	display: inline ;
+	color: blue;
+}
+
+biblStruct > monogr >  imprint > biblScope[unit="pp"]:before {
+	content: "PAGES:" ;
+	display: inline ;
+	color: grey;
+}
+
+biblStruct > monogr >  imprint > biblScope[unit="pp"] {
+	color: green;
+}
+
+biblStruct > monogr >  imprint > biblScope[unit="pp"][from]:after {
+	content: attr(from) '-' attr(to) ;
+	display: inline ;
+	color: blue;
+}
+

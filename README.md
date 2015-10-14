@@ -36,3 +36,9 @@ Some tools and styles for TEI
 ```
 	lessc less/viewContent.less --clean-css="--s0" > dist/css/contentTei.min.css
 ```
+
+- to generate ISTEX-RD stylesheets
+
+```
+	lessc less/refbibs.less > test.css
+```
