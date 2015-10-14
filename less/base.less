@@ -253,7 +253,8 @@ attRef {/* Empty Rule Set */}
 author {/* Empty Rule Set */}
 titleStmt > author {
 display:block;
-.head-font;
+font-family: @head-font-family;
+font-weight: bold;
 margin-bottom:1em;
 }
 
@@ -649,7 +650,8 @@ head {}
 
 TEI head {
 display:block;
-.head-font;
+font-family: @head-font-family;
+font-weight: bold;
 }
 
 body > head {
@@ -1302,7 +1304,8 @@ title[level=m] {
 /* as a hack to solve a JavaScript/jQuery issue. */
 titleStmt > tei-title {
 display:block;
-.head-font;
+font-family: @head-font-family;
+font-weight: bold;
 font-weight:bold !important;
 font-size:150%;
 }
